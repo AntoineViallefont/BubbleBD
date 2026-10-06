@@ -105,7 +105,7 @@ import kotlin.math.min
     }
     LaunchedEffect(book.id) {
         try { document=withContext(Dispatchers.IO) {ComicDocument(repo.localFile(book))}; total=document!!.count }
-        catch(e:Exception) {if(e is kotlinx.coroutines.CancellationException) throw e; error=e.message ?: "Album inaccessible"; loading=false}
+        catch(e:Exception) {if(e is kotlinx.coroutines.CancellationException) throw e; error=e.message ?: ui("Album inaccessible"); loading=false}
     }
     DisposableEffect(document) {val d=document; onDispose {d?.close()} }
     DisposableEffect(prefetch) {onDispose {prefetch.cancel()} }
@@ -131,7 +131,7 @@ import kotlin.math.min
             panelCache.put(targetPage,detected)
             panelStyle.record(targetPage,detected);repo.savePanelStyle(book.id,panelStyle)
             analysisReady=true
-        } catch(e:Exception) {if(e is kotlinx.coroutines.CancellationException) throw e; error=e.message ?: "Impossible d’afficher la page"}
+        } catch(e:Exception) {if(e is kotlinx.coroutines.CancellationException) throw e; error=e.message ?: ui("Impossible d’afficher la page")}
         finally {prepared?.cancel();if(page==targetPage) loading=false}
     }
     LaunchedEffect(document,page,loading,analysisReady,activePanel,readingDirection) {
@@ -163,24 +163,24 @@ import kotlin.math.min
             view.isEnabled=!loading && error==null
         })
         if(activePanel!=null && (showPanelHint || controls)) {
-            Text(GuidedFrames.label(activePanel!!.first,activePanel!!.second),color=Color.White,fontSize=12.sp,
+            Text(ui(GuidedFrames.label(activePanel!!.first,activePanel!!.second)),color=Color.White,fontSize=12.sp,
                 modifier=Modifier.align(Alignment.BottomCenter).padding(bottom=if(controls)78.dp else 20.dp)
                     .background(Color(0xB31B232D),androidx.compose.foundation.shape.RoundedCornerShape(50)).padding(horizontal=12.dp,vertical=5.dp))
         }
         if(loading) CircularProgressIndicator(Modifier.align(Alignment.Center),color=Blue)
-        if(error!=null) Column(Modifier.align(Alignment.Center).padding(32.dp).background(Color(0xE6151A21)).padding(20.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {Text(error!!,color=Color.White); Button(onClick=close) {Text("Revenir à la bibliothèque")} }
+        if(error!=null) Column(Modifier.align(Alignment.Center).padding(32.dp).background(Color(0xE6151A21)).padding(20.dp),verticalArrangement=Arrangement.spacedBy(16.dp)) {Text(ui(error!!),color=Color.White); Button(onClick=close) {Text(ui("Revenir à la bibliothèque"))} }
         if(controls && error==null) {
             Row(Modifier.align(Alignment.TopCenter).fillMaxWidth().background(Color(0xD9151A21)).statusBarsPadding().padding(horizontal=8.dp),verticalAlignment=Alignment.CenterVertically) {
-                IconButton(onClick={close()}) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,"Fermer le lecteur",tint=Color.White)}
+                IconButton(onClick={close()}) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,ui("Fermer le lecteur"),tint=Color.White)}
                 Text(book.displayTitle,Modifier.weight(1f),color=Color.White,fontSize=14.sp,maxLines=1)
-                IconButton(onClick={comicView?.fitPage()}) {Icon(Icons.Outlined.CropFree,"Voir toute la page",tint=Color.White)}
+                IconButton(onClick={comicView?.fitPage()}) {Icon(Icons.Outlined.CropFree,ui("Voir toute la page"),tint=Color.White)}
             }
             run {
                 Row(Modifier.align(Alignment.BottomCenter).navigationBarsPadding().background(Color(0xDD151A21),androidx.compose.foundation.shape.RoundedCornerShape(28.dp)).padding(horizontal=10.dp),verticalAlignment=Alignment.CenterVertically) {
-                    IconButton(onClick={move(-1)},enabled=page>0) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,"Page précédente",tint=if(page>0) Color.White else Color.Gray)}
+                    IconButton(onClick={move(-1)},enabled=page>0) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,ui("Page précédente"),tint=if(page>0) Color.White else Color.Gray)}
                     Text("${scrub.roundToInt()+1} / $total",Modifier
                         .semantics {
-                            contentDescription="Numéro de page : glissez pour parcourir, touchez pour saisir"
+                            contentDescription=ui("Numéro de page : glissez pour parcourir, touchez pour saisir")
                             progressBarRangeInfo=ProgressBarRangeInfo(scrub,0f..maxOf(1,total-1).toFloat())
                             setProgress {value ->changePage(value.roundToInt())}
                         }
@@ -196,12 +196,12 @@ import kotlin.math.min
                                     }
                                 })
                         }.clickable {input=(page+1).toString()}.padding(horizontal=20.dp,vertical=14.dp),color=Color.White,fontSize=16.sp)
-                    IconButton(onClick={move(1)},enabled=page<total-1) {Icon(Icons.AutoMirrored.Outlined.ArrowForward,"Page suivante",tint=if(page<total-1) Color.White else Color.Gray)}
+                    IconButton(onClick={move(1)},enabled=page<total-1) {Icon(Icons.AutoMirrored.Outlined.ArrowForward,ui("Page suivante"),tint=if(page<total-1) Color.White else Color.Gray)}
                 }
             }
         }
     }
-    input?.let { value -> AlertDialog(onDismissRequest={input=null},title={Text("Aller à la page")},text={OutlinedTextField(value,{input=it.filter(Char::isDigit).take(6)},label={Text("De 1 à $total")},keyboardOptions=KeyboardOptions(keyboardType=KeyboardType.Number),singleLine=true)},confirmButton={TextButton(onClick={if(changePage(value.toInt()-1)) input=null},enabled=!loading && value.toIntOrNull() in 1..maxOf(1,total)) {Text("Aller")}},dismissButton={TextButton(onClick={input=null}) {Text("Annuler")}}) }
+    input?.let { value -> AlertDialog(onDismissRequest={input=null},title={Text(ui("Aller à la page"))},text={OutlinedTextField(value,{input=it.filter(Char::isDigit).take(6)},label={Text(ui("De 1 à $total"))},keyboardOptions=KeyboardOptions(keyboardType=KeyboardType.Number),singleLine=true)},confirmButton={TextButton(onClick={if(changePage(value.toInt()-1)) input=null},enabled=!loading && value.toIntOrNull() in 1..maxOf(1,total)) {Text(ui("Aller"))}},dismissButton={TextButton(onClick={input=null}) {Text(ui("Annuler"))}}) }
 }
 
 class ComicView(context:Context):View(context) {
@@ -247,7 +247,7 @@ class ComicView(context:Context):View(context) {
     internal val guidedReading get()=autoCases
     internal val guidedZoomFactor get()=if(panel>=0)scale/caseScale else 1f
     private var downX=0f; private var downY=0f; private var navigated=false
-    init {isClickable=true;contentDescription="Page de bande dessinée. Touchez pour afficher les commandes."}
+    init {isClickable=true;contentDescription=ui("Page de bande dessinée. Touchez pour afficher les commandes.")}
     private val scaler=ScaleGestureDetector(context,object:ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScaleBegin(detector:ScaleGestureDetector):Boolean {
             stopFocusTransition();pinched=true;caseZoomStop=false;freeZoom=panel<0 || abs(scale/caseScale-1f)>.02f

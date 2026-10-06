@@ -28,34 +28,34 @@ import androidx.compose.ui.unit.dp
     var synopsis by rememberSaveable(book.id) {mutableStateOf(book.synopsis)}
     var locked by rememberSaveable(book.id) {mutableStateOf(book.metadataLocked)}
     fun edited()=book.copy(title=title.trim(),series=series.trim(),number=number.trim(),date=date.trim(),genre=genre.trim(),artist=artist.trim(),writer=writer.trim(),publisher=publisher.trim(),isbn=isbn.trim(),synopsis=synopsis.trim(),metadataEdited=true,metadataLocked=locked,seriesFromFile=if(series.trim()!=book.series)false else book.seriesFromFile)
-    AlertDialog(onDismissRequest=close,title={Text("Modifier la fiche")},text={
+    AlertDialog(onDismissRequest=close,title={Text(ui("Modifier la fiche"))},text={
         Column(Modifier.fillMaxWidth().verticalScroll(rememberScrollState()),verticalArrangement=Arrangement.spacedBy(8.dp)) {
             Row(Modifier.fillMaxWidth(),verticalAlignment=Alignment.CenterVertically) {
                 Icon(Icons.Outlined.Lock,null)
                 Spacer(Modifier.width(12.dp))
                 Column(Modifier.weight(1f)) {
-                    Text("Figer les informations")
-                    Text("Exclure cette fiche des recherches.",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(ui("Figer les informations"))
+                    Text(ui("Exclure cette fiche des recherches."),style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant)
                 }
-                Switch(checked=locked,onCheckedChange={locked=it},modifier=Modifier.semantics {contentDescription="Figer les informations"})
+                Switch(checked=locked,onCheckedChange={locked=it},modifier=Modifier.semantics {contentDescription=ui("Figer les informations")})
             }
             OutlinedButton(onClick={search?.invoke(edited())},enabled=!locked && !book.demo && title.isNotBlank() && search!=null,modifier=Modifier.fillMaxWidth().padding(vertical=8.dp)) {
-                Icon(Icons.Outlined.Search,null);Spacer(Modifier.width(8.dp));Text("Rechercher pour ce titre")
+                Icon(Icons.Outlined.Search,null);Spacer(Modifier.width(8.dp));Text(ui("Rechercher pour ce titre"))
             }
-            EditBookField("Titre",title,{title=it})
-            EditBookField("Série",series,{series=it})
-            EditBookField("N°",number,{number=it})
-            EditBookField("Parution",date,{date=it})
-            EditBookField("Genre",genre,{genre=it})
-            EditBookField("Dessinateur",artist,{artist=it})
-            EditBookField("Scénariste",writer,{writer=it})
-            EditBookField("Éditeur",publisher,{publisher=it})
+            EditBookField(ui("Titre"),title,{title=it})
+            EditBookField(ui("Série"),series,{series=it})
+            EditBookField(ui("N°"),number,{number=it})
+            EditBookField(ui("Parution"),date,{date=it})
+            EditBookField(ui("Genre"),genre,{genre=it})
+            EditBookField(ui("Dessinateur"),artist,{artist=it})
+            EditBookField(ui("Scénariste"),writer,{writer=it})
+            EditBookField(ui("Éditeur"),publisher,{publisher=it})
             EditBookField("ISBN",isbn,{isbn=it})
-            EditBookField("Résumé",synopsis,{synopsis=it},false)
+            EditBookField(ui("Résumé"),synopsis,{synopsis=it},false)
         }
     },confirmButton={TextButton(enabled=title.isNotBlank(),onClick={
         save(edited())
-    }) {Text("Enregistrer")}},dismissButton={TextButton(onClick=close) {Text("Annuler")}})
+    }) {Text(ui("Enregistrer"))}},dismissButton={TextButton(onClick=close) {Text(ui("Annuler"))}})
 }
 
 @Composable private fun EditBookField(label:String,value:String,change:(String)->Unit,singleLine:Boolean=true) {

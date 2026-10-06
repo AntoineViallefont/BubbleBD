@@ -1,36 +1,36 @@
-name: Je souhaite participer aux tests
-description: Se porter volontaire pour BubbleBD et un éventuel test Google Play
-title: "[Volontaire] "
+name: English — Volunteer to test
+description: Help test BubbleBD and potentially join a future Google Play test
+title: "[Volunteer] "
 labels: [testeur]
 body:
   - type: markdown
     attributes:
-      value: "Merci ! Votre pseudonyme GitHub suffit. Ce formulaire est PUBLIC : ne publiez ni adresse Google, ni e-mail, ni numéro de téléphone. La bêta GitHub est disponible ; le test fermé Google Play n'est pas encore ouvert. Nous annoncerons ici les prochaines étapes."
+      value: "Thank you! Your GitHub username is enough. This form is PUBLIC: do not post a Google email, any other email address or a phone number. The GitHub beta is available; the Google Play closed test has not started. Next steps will be announced here."
   - type: input
     id: device
     attributes:
-      label: Modèle de téléphone et version Android
+      label: Phone model and Android version
       placeholder: "Samsung Galaxy S23, Android 16"
     validations:
       required: true
   - type: dropdown
     id: interest
     attributes:
-      label: Comment souhaitez-vous participer ?
+      label: How would you like to help?
       options:
-        - Essayer la bêta et participer au futur test Google Play
-        - Essayer uniquement la bêta GitHub
+        - Try the beta and join a future Google Play test
+        - Try the GitHub beta only
     validations:
       required: true
   - type: textarea
     id: reading
     attributes:
-      label: Vos habitudes de lecture (facultatif)
-      description: "BD, mangas, comics ; formats PDF, CBZ, CBR ; fonctionnalités à essayer. Aucun fichier de BD à joindre."
+      label: Your reading habits (optional)
+      description: "Comics, manga or graphic novels; PDF, CBZ or CBR; features you would like to try. Please do not attach comic files."
   - type: checkboxes
     id: understanding
     attributes:
       label: Participation
       options:
-        - label: "Je comprends que le futur test Google Play demandera un compte Google et au moins 14 jours d'inscription continue avec de vrais essais ; les jours de bêta GitHub ne comptent pas pour ce délai."
+        - label: "I understand that a future Google Play test will require a Google account, at least 14 days of continuous enrolment and real testing. Days spent using the GitHub beta do not count towards this period."
           required: true

@@ -25,11 +25,11 @@ import androidx.compose.ui.unit.dp
         catch(e:Exception) {if(e is kotlinx.coroutines.CancellationException)throw e;error=e.message}
         finally {loading=false}
     }
-    AlertDialog(onDismissRequest=close,title={Text("Dossier OneDrive")},text={Column(Modifier.fillMaxWidth().heightIn(min=200.dp,max=430.dp)) {
-        Row(verticalAlignment=Alignment.CenterVertically) {if(path.size>1) IconButton(onClick={path=path.dropLast(1)},enabled=!loading) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,"Dossier parent")};Text(path.joinToString(" / ") {it.name})}
+    AlertDialog(onDismissRequest=close,title={Text(ui("Dossier OneDrive"))},text={Column(Modifier.fillMaxWidth().heightIn(min=200.dp,max=430.dp)) {
+        Row(verticalAlignment=Alignment.CenterVertically) {if(path.size>1) IconButton(onClick={path=path.dropLast(1)},enabled=!loading) {Icon(Icons.AutoMirrored.Outlined.ArrowBack,ui("Dossier parent"))};Text(path.joinToString(" / ") {it.name})}
         if(loading) LinearProgressIndicator(Modifier.fillMaxWidth())
-        error?.let {Text(it,color=MaterialTheme.colorScheme.error);TextButton(onClick={revision++}) {Text("Réessayer")}}
-        if(!loading && error==null && folders.isEmpty()) Text("Aucun sous-dossier. Vous pouvez choisir ce dossier.")
+        error?.let {Text(ui(it),color=MaterialTheme.colorScheme.error);TextButton(onClick={revision++}) {Text(ui("Réessayer"))}}
+        if(!loading && error==null && folders.isEmpty()) Text(ui("Aucun sous-dossier. Vous pouvez choisir ce dossier."))
         LazyColumn {items(folders,key={it.uri}) {folder -> Row(Modifier.fillMaxWidth().clickable(enabled=!loading) {path=path+folder}.padding(vertical=14.dp),verticalAlignment=Alignment.CenterVertically) {Icon(Icons.Outlined.FolderOpen,null);Spacer(Modifier.width(12.dp));Text(folder.name)}}}
-    }},confirmButton={TextButton(onClick={path.lastOrNull()?.let(choose)},enabled=!loading && path.isNotEmpty() && error==null) {Text("Choisir ce dossier")}},dismissButton={TextButton(onClick=close) {Text("Annuler")}})
+    }},confirmButton={TextButton(onClick={path.lastOrNull()?.let(choose)},enabled=!loading && path.isNotEmpty() && error==null) {Text(ui("Choisir ce dossier"))}},dismissButton={TextButton(onClick=close) {Text(ui("Annuler"))}})
 }

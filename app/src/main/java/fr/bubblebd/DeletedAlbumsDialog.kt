@@ -33,26 +33,26 @@ import kotlinx.coroutines.sync.withPermit
         Surface(shape=MaterialTheme.shapes.large) {
             Column(Modifier.fillMaxWidth().padding(16.dp)) {
                 Row(verticalAlignment=Alignment.CenterVertically) {
-                    Text("Albums supprimés",Modifier.weight(1f),style=MaterialTheme.typography.titleLarge)
-                    IconButton(onClick=close) {Icon(Icons.Outlined.Close,"Fermer les albums supprimés")}
+                    Text(ui("Albums supprimés"),Modifier.weight(1f),style=MaterialTheme.typography.titleLarge)
+                    IconButton(onClick=close) {Icon(Icons.Outlined.Close,ui("Fermer les albums supprimés"))}
                 }
                 Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.SpaceBetween,verticalAlignment=Alignment.CenterVertically) {
-                    Text("${selected.size} sélectionné${if(selected.size>1)"s" else ""}",style=MaterialTheme.typography.bodySmall)
-                    TextButton(onClick={vm.restoreDeleted(albums.map {it.id}.toSet())},enabled=albums.isNotEmpty() && !vm.busy) {Text("Tout réimporter")}
+                    Text(ui("${selected.size} sélectionné${if(selected.size>1)"s" else ""}"),style=MaterialTheme.typography.bodySmall)
+                    TextButton(onClick={vm.restoreDeleted(albums.map {it.id}.toSet())},enabled=albums.isNotEmpty() && !vm.busy) {Text(ui("Tout réimporter"))}
                 }
-                if(albums.isEmpty()) Text("Aucun album supprimé",Modifier.padding(vertical=16.dp))
+                if(albums.isEmpty()) Text(ui("Aucun album supprimé"),Modifier.padding(vertical=16.dp))
                 LazyColumn(Modifier.weight(1f,fill=false),verticalArrangement=Arrangement.spacedBy(8.dp)) {
                     items(albums,key={it.id}) {book ->
                         Row(Modifier.fillMaxWidth(),verticalAlignment=Alignment.CenterVertically) {
-                            Checkbox(checked=book.id in selected,onCheckedChange={selected=if(it)selected+book.id else selected-book.id},enabled=!vm.busy,modifier=Modifier.size(44.dp).semantics {contentDescription="Sélectionner ${book.displayTitle}"})
+                            Checkbox(checked=book.id in selected,onCheckedChange={selected=if(it)selected+book.id else selected-book.id},enabled=!vm.busy,modifier=Modifier.size(44.dp).semantics {contentDescription=ui("Sélectionner ${book.displayTitle}")})
                             DeletedPagePreview(vm.repo,book,previewSlots)
                             Text(book.displayTitle,Modifier.weight(1f).padding(horizontal=8.dp),maxLines=3,overflow=TextOverflow.Ellipsis,style=MaterialTheme.typography.bodyMedium)
-                            TextButton(onClick={vm.restoreDeleted(setOf(book.id))},enabled=!vm.busy) {Text("Réimport")}
+                            TextButton(onClick={vm.restoreDeleted(setOf(book.id))},enabled=!vm.busy) {Text(ui("Réimport"))}
                         }
                     }
                 }
-                if(vm.busy) {LinearProgressIndicator(Modifier.fillMaxWidth());Text(vm.task,style=MaterialTheme.typography.bodySmall)}
-                Button(onClick={vm.restoreDeleted(selected)},enabled=selected.isNotEmpty() && !vm.busy,modifier=Modifier.fillMaxWidth().padding(top=8.dp)) {Text("Réimporter la sélection")}
+                if(vm.busy) {LinearProgressIndicator(Modifier.fillMaxWidth());Text(ui(vm.task),style=MaterialTheme.typography.bodySmall)}
+                Button(onClick={vm.restoreDeleted(selected)},enabled=selected.isNotEmpty() && !vm.busy,modifier=Modifier.fillMaxWidth().padding(top=8.dp)) {Text(ui("Réimporter la sélection"))}
             }
         }
     }
@@ -70,9 +70,9 @@ import kotlinx.coroutines.sync.withPermit
     Box(Modifier.size(width=48.dp,height=68.dp),contentAlignment=Alignment.Center) {
         val image=bitmap
         if(image!=null) {
-            Image(image.asImageBitmap(),"Première page de ${book.displayTitle}",Modifier.fillMaxSize(),contentScale=ContentScale.Fit)
+            Image(image.asImageBitmap(),ui("Première page de ${book.displayTitle}"),Modifier.fillMaxSize(),contentScale=ContentScale.Fit)
         } else if(unavailable) {
-            Icon(Icons.Outlined.ImageNotSupported,"Première page inaccessible")
+            Icon(Icons.Outlined.ImageNotSupported,ui("Première page inaccessible"))
         } else {
             CircularProgressIndicator(Modifier.size(20.dp),strokeWidth=2.dp)
         }

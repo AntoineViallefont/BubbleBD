@@ -1,0 +1,73 @@
+{
+  "version": "0.3.33",
+  "versionCode": 38,
+  "date": "2026-10-06",
+  "apk_sha256": "f6834047cce50c99e1af47d9629e3ffb6d903283209562961b4f2728d7a0e362",
+  "signing_certificate_sha256": "c8fe1a0129e6dc2f98a9685e512ce8a43b7816718aae93970476ef37092d96f9",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "production_scope": "UI text, language configuration and source link; engine, model, stored keys and book metadata unchanged",
+  "identical_canonical_public_production_files": 98,
+  "jvm_canonical": {
+    "passed": 190,
+    "skipped": 1,
+    "failed": 0
+  },
+  "lint_release": "passed",
+  "android_bilingual_journeys": {
+    "passed": 2,
+    "failed": 0,
+    "checks": [
+      "home dark/light",
+      "library and sorting",
+      "search and original book title",
+      "edit lock",
+      "settings",
+      "about",
+      "reader page entry",
+      "persisted progress"
+    ]
+  },
+  "android_french_existing_reader_editor_checks": {
+    "passed": 3,
+    "failed": 0
+  },
+  "full_private_corpus_rerun": false,
+  "known_reader_limits": "15 pages with failing criteria in latest 61-page / 340-variant private baseline; detection engine unchanged",
+  "physical_phone_validation": "not performed",
+  "google_drive": "No dedicated integration; Android folder picker provider support is conditional and unverified with a connected Drive account.",
+  "backend": "Unchanged; previous offline tests not rerun for this UI release; no service deployment or billing changes.",
+  "android_english_panel_indicator": {
+    "passed": 1,
+    "failed": 0,
+    "checks": [
+      "Panel 2/5 visible",
+      "indicator hides after 1.5 seconds"
+    ]
+  },
+  "jvm_public": {
+    "passed": 189,
+    "skipped": 2,
+    "failed": 0
+  },
+  "public_build_and_lint_debug": "passed",
+  "signed_release_update": {
+    "result": "passed",
+    "from": "0.3.32 (37)",
+    "to": "0.3.33 (38)",
+    "avd": "BubbleBD_Test_API_36_1",
+    "preserved": [
+      "synthetic library record",
+      "page 7 of 12",
+      "title and metadata",
+      "metadata lock",
+      "theme",
+      "sort",
+      "dimming"
+    ],
+    "scope": "Synthetic library, same publication key, in-place update and successful startup; no physical phone validation."
+  },
+  "native_zip_alignment_16k": "passed; runtime 16k device not tested"
+}

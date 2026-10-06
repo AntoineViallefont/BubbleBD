@@ -1,22 +1,22 @@
-name: Proposer une amélioration
-description: Une idée pour rendre la lecture plus agréable
-title: "[Idée] "
+name: English — Suggest an improvement
+description: An idea to make reading more enjoyable
+title: "[Idea] "
 labels: [enhancement]
 body:
   - type: textarea
     id: need
     attributes:
-      label: Quel besoin rencontrez-vous ?
-      description: Expliquez la situation pendant laquelle cette amélioration vous serait utile.
+      label: What would help you?
+      description: Describe a situation where this improvement would be useful.
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Votre proposition
-      description: Une idée simple suffit. Aucun vocabulaire technique nécessaire.
+      label: Your suggestion
+      description: A simple idea is enough. No technical terminology needed.
     validations:
       required: true
   - type: markdown
     attributes:
-      value: "Les propositions sont publiques. Les fichiers BD et les corrections privées de votre bibliothèque ne sont pas partagés automatiquement."
+      value: "Suggestions are public. Your comic files and local library edits are not automatically shared."

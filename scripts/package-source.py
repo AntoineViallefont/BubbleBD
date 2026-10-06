@@ -5,6 +5,7 @@ root=Path(__file__).resolve().parent.parent
 version=re.search(r'val bubbleVersion = "([^"]+)"',(root/'app/build.gradle.kts').read_text()).group(1)
 files=set()
 files.add(root/'scripts/sign-release.py')
+files.add(root/'scripts/test-release-update.py')
 for name in ['LICENSE','NOTICE','docs/libarchive-LICENSE.txt','settings.gradle.kts','build.gradle.kts','gradle.properties','gradlew','app/build.gradle.kts','scripts/build.sh','scripts/test-device.sh','scripts/test-detection.sh','scripts/check-detection-corpus.py','scripts/package-source.py','scripts/verify-existing-release.py','scripts/run-metadata-local.py','scripts/prepare-metadata-worker.py']:
  files.add(root/name)
 for name in ['server.py','mistral_provider.py','test_server.py','test_mistral.py','catalog_backup.py','test_catalog_backup.py','Dockerfile','README.md','LICENSE','.dockerignore']:

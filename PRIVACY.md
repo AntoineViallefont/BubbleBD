@@ -1,40 +1,44 @@
-# Données et confidentialité
+# Data and privacy
 
-Dernière mise à jour : 6 octobre 2026 — BubbleBD 0.3.32.
+**English · [Français](PRIVACY.fr.md)**
 
-BubbleBD est un projet bénévole maintenu par Antoine Viallefont. L'application ne demande pas de compte BubbleBD. Elle n'intègre ni publicité ni outil de mesure d'audience. Pour une question générale, utilisez les [tickets du projet](https://github.com/AntoineViallefont/BubbleBD/issues). Ces tickets sont publics : ne publiez pas d'informations personnelles. Pour une vulnérabilité, utilisez le signalement privé dans l'onglet Security.
+Updated 6 October 2026 — BubbleBD 0.3.33.
 
-## Lecture et bibliothèque
+BubbleBD is a volunteer project maintained by Antoine Viallefont. It requires no BubbleBD account and contains no advertising or analytics SDK. General questions can go to the [project issues](https://github.com/AntoineViallefont/BubbleBD/issues), which are public: do not include personal information. Report vulnerabilities privately through the Security tab.
 
-La détection des cases s'effectue sur l'appareil avec un modèle embarqué. La bibliothèque, la progression, les réglages, les fiches et leurs modifications sont conservés dans le stockage de l'application. La lecture d'un album disponible localement ne nécessite pas le service Mistral.
+## Reading and your library
 
-Les fichiers sélectionnés restent sous votre contrôle. Retirer un album de BubbleBD supprime ses copies privées et son entrée dans la bibliothèque, pas son original. Désinstaller l'application efface ses données locales : sauvegardez ce qui vous importe avant de désinstaller. Il n'existe pas de synchronisation de la bibliothèque entre appareils.
+Panel detection runs on your device using a bundled model. Your library, progress, preferences, book records and edits stay in the app's storage. Reading a locally available book does not require the Mistral service.
 
-## Recherche des informations d'un album
+Your selected files remain under your control. Removing a book from BubbleBD removes its library entry and private copies, not the original. Uninstalling erases the app's local data: back up anything important first. There is no library synchronisation between devices.
 
-À l'import d'un nouvel album ou lors d'une recherche demandée explicitement, BubbleBD peut consulter des catalogues et sites publics, puis le service commun hébergé chez Cloudflare utilisant Mistral. Une fiche figée est exclue des recherches. Une recherche déjà demandée peut continuer en arrière-plan.
+## Looking up book information
 
-Selon les indices disponibles, les recherches transmettent le titre, la série, le tome, l'ISBN et éventuellement les auteurs, l'éditeur, la date, le genre, un extrait du résumé, des adresses de sources, du texte extrait de la couverture et une miniature JPEG de couverture. Le contenu complet de la BD et la progression de lecture ne sont pas envoyés au service bibliographique. La détection des cases ne transmet pas les planches.
+When importing a new book or explicitly requesting a lookup, BubbleBD may query public catalogues and websites, then a shared service hosted on Cloudflare that uses Mistral. Locked records are excluded from searches. A previously requested search may continue in the background.
 
-Les services contactés reçoivent les données nécessaires aux requêtes et les informations techniques de connexion, notamment l'adresse IP de leur interlocuteur. Les images distantes peuvent être téléchargées pour afficher les couvertures.
+Depending on the clues available, searches send the title, series, volume, ISBN and potentially authors, publisher, publication date, genre, a summary excerpt, source URLs, text extracted from the cover and a JPEG cover thumbnail. Full comics and reading progress are not sent to the metadata service. Panel detection does not send comic pages.
 
-Le service partagé conserve les fiches trouvées et leurs sources pour les réutiliser lors de recherches équivalentes. Ces fiches positives n'ont pas de date d'expiration automatique dans la configuration actuelle ; les réponses négatives sont mises en cache un jour. La couverture envoyée n'est pas enregistrée dans la base D1. Aucune modification personnelle de fiche n'est synchronisée comme contribution communautaire. Une valeur saisie manuellement peut toutefois être utilisée comme indice lors d'une nouvelle recherche : n'insérez pas d'information personnelle dans les champs d'un album.
+Contacted services receive the information needed for the request and technical connection information, including the IP address of the party contacting them. Remote images may be downloaded to display covers.
 
-Les journaux applicatifs du service sont désactivés. Cela ne constitue pas une garantie d'absence de journaux ou de conservation par Cloudflare, Mistral, Microsoft ou les catalogues consultés. Les conditions de ces fournisseurs s'appliquent. Le statut d'exclusion des données de l'entraînement dans le compte Mistral n'a pas été vérifié ; l'offre gratuite peut utiliser les entrées/sorties pour améliorer ses modèles. N'utilisez pas la recherche bibliographique avec des contenus confidentiels.
+The shared service stores found records and their sources for equivalent future searches. Positive records currently have no automatic expiration; negative results are cached for one day. Submitted covers are not stored in D1. Personal record edits are not synchronised as community contributions. A manually entered value may, however, be used as a clue in a new search: do not enter personal information in book fields.
 
-- [Confidentialité Mistral](https://legal.mistral.ai/terms/privacy-policy)
-- [Utilisation des données par Mistral](https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models)
-- [Confidentialité Cloudflare](https://www.cloudflare.com/privacypolicy/)
-- [Confidentialité Microsoft](https://privacy.microsoft.com/privacystatement)
+Application-level service logs are disabled. This does not guarantee that Cloudflare, Mistral, Microsoft or queried catalogues keep no logs or other data. Their own terms apply. The Mistral account's training opt-out status has not been verified; the free plan may use inputs and outputs to improve models. Do not use book-information lookup with confidential material.
 
-Les catalogues disponibles et leurs adresses sont visibles dans le code et les sources des fiches. Le réseau, les quotas et l'exactitude des résultats restent des limites de la bêta. La recherche Mistral est gratuite pour les lecteurs mais n'est pas garantie illimitée.
+- [Mistral privacy policy](https://legal.mistral.ai/terms/privacy-policy)
+- [Mistral data use](https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models)
+- [Cloudflare privacy policy](https://www.cloudflare.com/privacypolicy/)
+- [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 
-## OneDrive facultatif
+Available catalogues and their addresses can be found in the code and in book-record sources. Network availability, quotas and accuracy remain beta limitations. Mistral lookup is free for readers, but is not guaranteed to be unlimited.
 
-La connexion OneDrive passe par Microsoft avec votre accord. Elle permet de consulter les fichiers autorisés et de télécharger les albums pour les lire ; elle ne crée pas de compte BubbleBD. Les jetons sont conservés dans l'espace privé de l'application. Vous pouvez révoquer l'accès depuis votre compte Microsoft.
+## Optional cloud access
 
-## GitHub et volontaires
+OneDrive sign-in goes through Microsoft with your permission. It lets the app browse authorised files and download books for reading; it does not create a BubbleBD account. Tokens stay in the app's private storage. You can revoke access through your Microsoft account.
 
-Le code, les tickets et les inscriptions de volontaires sur GitHub sont publics et hébergés par GitHub. Votre pseudonyme et ce que vous y écrivez sont visibles. Aucun e-mail Google n'est nécessaire pour se porter volontaire maintenant. Ne joignez pas de BD complète, d'identifiant ou de document privé. Si un test Google Play est organisé, un mode d'inscription adapté sera annoncé séparément. Aucune liste d'adresses Google n'est collectée par ce dépôt.
+Other storage providers may appear in Android's folder picker. Availability depends on the installed provider and whether it exposes selectable folders. Google Drive folder access has not been verified on a connected account; BubbleBD has no dedicated Google Drive integration. The chosen provider's own data handling applies.
 
-Pour éviter le service partagé dans une compilation personnelle, laissez `metadata.endpoint` vide. Cela ne désactive pas les consultations directes des catalogues ; une lecture sans accès réseau s'effectue avec les albums déjà disponibles localement.
+## GitHub and volunteers
+
+GitHub hosts the public code, issues and volunteer forms. Your username and contributions are visible to others. No Google email address is needed to volunteer now. Do not attach full comics, credentials or private documents. If a Google Play test is arranged, an appropriate enrolment method will be announced separately. This repository does not collect a list of Google email addresses.
+
+To avoid the shared service in a personal build, leave `metadata.endpoint` empty. This does not disable direct catalogue queries. Offline reading uses books already available locally.

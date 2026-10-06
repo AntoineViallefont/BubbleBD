@@ -25,6 +25,12 @@ done
 printf '%s\n' "$$" > "$test_lock/pid"
 trap 'rm -f "$test_lock/pid"; rmdir "$test_lock" 2>/dev/null || true' EXIT HUP INT TERM
 printf 'Ces tests réinitialisent la bibliothèque de BubbleBD sur la cible de test. Utiliser un émulateur dédié.\n'
+if [ "${1:-}" = --update-release ]; then
+  [ "$#" -eq 3 ] || exit 1
+  ./gradlew :app:assembleDebugAndroidTest --console=plain
+  python3 scripts/test-release-update.py "$adb_tool" "$ANDROID_SERIAL" "$2" "$3"
+  exit 0
+fi
 if [ "${1:-}" = --smoke-release ]; then
   [ "$#" -eq 2 ] && [ -f "$2" ] || exit 1
   # This mode replaces only BubbleBD on the already verified dedicated test AVD.
@@ -37,5 +43,12 @@ if [ "${1:-}" = --smoke-release ]; then
   "$adb_tool" -s "$ANDROID_SERIAL" shell uiautomator dump /sdcard/bubblebd-release-ui.xml >/dev/null
   "$adb_tool" -s "$ANDROID_SERIAL" shell cat /sdcard/bubblebd-release-ui.xml
   exit 0
+fi
+# Historical UI assertions are French; English scenarios opt in explicitly.
+BUBBLEBD_TEST_LANGUAGE="${BUBBLEBD_TEST_LANGUAGE:-fr}"
+if [ -n "$BUBBLEBD_TEST_LANGUAGE" ]; then
+  case "$BUBBLEBD_TEST_LANGUAGE" in en|fr) ;; *) printf 'Langue de test : en ou fr uniquement.\n'; exit 1 ;; esac
+  ./gradlew :app:installDebug --console=plain
+  "$adb_tool" -s "$ANDROID_SERIAL" shell cmd locale set-app-locales fr.bubblebd --user 0 --locales "$BUBBLEBD_TEST_LANGUAGE"
 fi
 ./gradlew :app:connectedDebugAndroidTest --console=plain "$@"

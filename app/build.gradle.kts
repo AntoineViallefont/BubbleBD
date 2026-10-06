@@ -12,7 +12,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
-val bubbleVersion = "0.3.32"
+val bubbleVersion = "0.3.33"
 android {
     namespace = "fr.bubblebd"
     compileSdk = 36
@@ -21,7 +21,7 @@ android {
         applicationId = "fr.bubblebd"
         minSdk = 26
         targetSdk = 36
-        versionCode = 37
+        versionCode = 38
         versionName = bubbleVersion
         ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
         val local = Properties().apply { rootProject.file("local.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) } }

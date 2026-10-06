@@ -24,7 +24,7 @@ class InterfaceTest {
         repo.saveBooks(runBlocking {repo.demoBooks()})
         repo.savePrefs(Preferences(theme="dark"))
         scenario=ActivityScenario.launch(MainActivity::class.java)
-        compose.waitUntil(5000) {compose.onAllNodesWithText("À reprendre").fetchSemanticsNodes().isNotEmpty()}
+        compose.waitUntil(5000) {compose.onAllNodesWithText(ui("À reprendre")).fetchSemanticsNodes().isNotEmpty()}
     }
     @After fun finish() {scenario.close()}
     private fun capture(name:String) {
@@ -285,7 +285,7 @@ class InterfaceTest {
     }
     @Test fun guidedIndicatorPreview() {
         compose.onNodeWithText("Les Rivages bleus").performClick()
-        compose.onNodeWithText("Reprendre",substring=false).performClick()
+        compose.onNodeWithText(ui("Reprendre"),substring=false).performClick()
         compose.waitUntil(120000) {
             var ready=false
             scenario.onActivity {activity ->
@@ -319,9 +319,10 @@ class InterfaceTest {
         val b=InstrumentationRegistry.getInstrumentation().uiAutomation.takeScreenshot()
         File(ctx.getExternalFilesDir(null),"qa").mkdirs()
         File(ctx.getExternalFilesDir(null),"qa/lecteur-case.png").outputStream().use {b.compress(Bitmap.CompressFormat.PNG,100,it)}
-        compose.onNodeWithText("Case 2/5").assertIsDisplayed()
+        android.os.ParcelFileDescriptor.AutoCloseInputStream(InstrumentationRegistry.getInstrumentation().uiAutomation.executeShellCommand("cp ${File(ctx.getExternalFilesDir(null),"qa/lecteur-case.png").absolutePath} /sdcard/Download/bubble-${java.util.Locale.getDefault().language}-reader-panel.png")).use {it.readBytes()}
+        compose.onNodeWithText(ui("Case 2/5")).assertIsDisplayed()
         compose.mainClock.advanceTimeBy(1700)
-        compose.onNodeWithText("Case 2/5").assertDoesNotExist()
+        compose.onNodeWithText(ui("Case 2/5")).assertDoesNotExist()
         compose.mainClock.autoAdvance=true
     }
 

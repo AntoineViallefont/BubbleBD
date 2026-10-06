@@ -1,74 +1,71 @@
 # BubbleBD
 
-**Vos BD, à votre rythme. Même sur un petit écran.**
+**English · [Français](README.fr.md)**
 
-BubbleBD est un lecteur Android gratuit et open source pour votre collection personnelle. Ouvrez un album, passez d'une case à l'autre et retrouvez votre lecture là où vous l'avez laissée.
+### Your comics. Your pace. Even on a small screen.
 
-**[Télécharger la bêta Android](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.32-beta.1)** · **[Devenir testeur](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** · [Signaler un problème](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml) · [Proposer une idée](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml)
+BubbleBD is a free, open-source Android reader for your own comic collection. Open a book, move through its panels and pick up where you left off.
+
+**[Download the Android beta](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.33-beta.1)** · **[Volunteer to test](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** · [Report a problem](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml) · [Suggest an improvement](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml)
 
 <p align="center">
-<img src="docs/images/accueil-nuit.png" width="230" alt="Accueil de BubbleBD avec reprise de lecture">
-<img src="docs/images/bibliotheque-grille.png" width="230" alt="Bibliothèque d'albums et séries">
-<img src="docs/images/lecteur-case.png" width="230" alt="Lecture guidée avec la case active mise en avant">
+<img src="docs/images/en-home-dark.png" width="230" alt="BubbleBD home screen with reading progress">
+<img src="docs/images/en-library-light.png" width="230" alt="BubbleBD library in the light theme">
+<img src="docs/images/en-reader-panel.png" width="230" alt="Guided reading with the active comic panel highlighted">
 </p>
 
-*Captures réelles de l'application sur émulateur. Albums et illustrations de démonstration fictifs ; aucune BD privée n'est distribuée.*
+*Actual emulator screenshots. Demo books and illustrations are fictional. Private comics are never distributed.*
 
-## Ce que vous pouvez faire
+## Made for reading
 
-- **Lire case par case** grâce à une détection automatique effectuée sur le téléphone. Double toucher pour passer de la page à une case ; zoom et déplacement disponibles.
-- **Retrouver votre collection** : couvertures, séries regroupées, ordre des tomes, progression et reprise de lecture.
-- **Ouvrir vos fichiers PDF, CBZ et CBR**, sur Android 8 ou supérieur avec processeur ARM 64 bits ou x86 64 bits. Les archives chiffrées ou certains fichiers endommagés peuvent ne pas s'ouvrir.
-- **Compléter les fiches des albums** depuis des catalogues et sources identifiées. Corrigez une fiche, figez ses informations ou relancez une recherche pour ce titre.
-- **Choisir votre confort de lecture** : thèmes clair/sombre, lecture manga et assombrissement autour de la case active.
-- **Utiliser OneDrive en option**, avec votre propre compte Microsoft. Aucun compte BubbleBD n'est requis.
+- **Automatic panel detection on your phone.** Double-tap to switch between a panel and the full page. Pinch and drag when you need a closer look.
+- **A library that remembers your place.** Browse covers, grouped series and reading progress.
+- **Your own PDF, CBZ and CBR files.** Originals are never changed. Encrypted or damaged archives may not open.
+- **Sourced book information.** Look up details, edit a record or lock it to prevent further changes from searches.
+- **Reading comfort.** Light and dark themes, right-to-left manga reading and adjustable dimming around the active panel.
+- **Android folder access.** Other providers may appear in the folder picker, depending on what they support. Google Drive folder access has not been verified; there is no dedicated Drive integration.
+- **Optional OneDrive access** with your own Microsoft account. No BubbleBD account required.
 
-L'application est **100 % gratuite, sans publicité ni achat intégré**. Vos fichiers originaux restent intacts. La détection et la lecture des albums disponibles localement fonctionnent sans serveur ; la recherche bibliographique et OneDrive utilisent Internet.
+**Free, with no ads or in-app purchases.** Android 8 or newer, ARM64 or x86_64. No commercial comics included.
 
-## Nous cherchons des lecteurs pour préparer Google Play
+**English and French interfaces.** BubbleBD follows your phone's language, using English for other languages. On Android 13+, you can also select BubbleBD's language in Android's app settings. Book titles, summaries and personal metadata are not translated.
 
-BubbleBD est une bêta. Nous recherchons des volontaires pour essayer l'app sur différents téléphones et raconter leur expérience : ce qui est agréable, ce qui bloque et ce qui manque.
+## Readers wanted — help us prepare for Google Play
 
-**[Je souhaite participer](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** — un pseudonyme GitHub suffit. Ne publiez pas votre adresse Google. Un compte GitHub gratuit est nécessaire pour envoyer ce formulaire.
+This is a beta, and practical feedback matters: what feels comfortable, what gets in the way and what you would like to improve. No technical background is needed.
 
-Si suffisamment de lecteurs souhaitent continuer, nous organiserons un test fermé Google Play : au moins 12 testeurs avec leur compte Google, inscrits pendant 14 jours consécutifs et utilisant réellement l'app. **Ce test n'est pas encore ouvert.** Les essais de la bêta GitHub ne comptent pas dans ces 14 jours. Le projet pourra rester sur GitHub si l'intérêt ne justifie pas une publication sur le Play Store.
+**[I'd like to help](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** — your GitHub username is enough. A free GitHub account is needed to submit the form. **Do not post your Google email address:** issues are public.
 
-Vous pouvez simplement essayer la bêta, sans vous engager pour Google Play. Les retours sont publics ; n'y joignez pas de BD complète ni de donnée personnelle. Pour suivre les annonces, choisissez **Watch → Custom → Releases** sur ce dépôt.
+If enough readers are interested, we will organise a Google Play closed test with at least 12 testers enrolled continuously for 14 days and actively trying the app. **That test has not started.** Time spent using the GitHub beta does not count towards Google's 14-day requirement. You can try this beta without committing to the future Play test. BubbleBD may simply remain on GitHub if there is not enough interest.
 
-## Installer la bêta
+Follow releases with **Watch → Custom → Releases**. Report problems and ideas using the links above; please do not attach private books or personal information.
 
-1. Ouvrez [la dernière version](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.32-beta.1) depuis votre téléphone Android.
-2. Dans **Assets**, téléchargez `BubbleBD-0.3.32-beta.apk` (pas l'archive du code source).
-3. Ouvrez le fichier et autorisez ponctuellement votre navigateur ou gestionnaire de fichiers à installer cette application. Vous pouvez retirer cette autorisation ensuite. Ne désactivez pas Play Protect.
-4. Ajoutez un dossier ou un album que vous avez le droit de lire. Aucun album commercial n'est fourni.
+## Install
 
-La bêta est signée avec la clé de publication BubbleBD. Les futures versions officielles utiliseront la même clé, avec un numéro de version supérieur. Les empreintes de l'APK et du certificat sont indiquées dans chaque publication.
+1. Open the [beta release](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.33-beta.1) on your Android phone.
+2. Under **Assets**, download `BubbleBD-0.3.33-beta.apk`, not the source archive.
+3. Open the APK and temporarily allow installation from your browser or file manager. You can revoke that permission afterwards. Do not disable Play Protect.
+4. Add a folder containing comics you have the right to read.
 
-**Anciennes versions Firebase :** la signature a changé. N'essayez pas de remplacer ou de désinstaller votre version de test sans sauvegarde : une désinstallation effacerait la bibliothèque et la progression locales. Les fichiers originaux restent conservés. Il n'existe pas encore d'outil de migration de ces données.
+**Updating the GitHub beta:** install the new APK over the previous GitHub beta. It uses the same publication key and a higher version code, so uninstalling is unnecessary. Keep your original files available.
 
-## Limites connues et données
+**Earlier Firebase testers:** those builds used an Android Debug signature. They cannot be updated directly with this beta. Keep your current installation: uninstalling would erase your local library and progress. Original files are preserved. No migration tool is available yet.
 
-La détection peut manquer des cases, se tromper dans leur ordre ou cadrer imparfaitement une bulle. La lecture en page entière et le zoom restent disponibles. Aucune réussite universelle n'est promise : la dernière mesure privée du moteur comportait encore 15 planches avec des critères en échec sur 61 planches, avec 340 variantes contrôlées ; ce n'est pas une mesure de fiabilité sur toutes les BD.
+## Honest limits and privacy
 
-La recherche bibliographique peut se tromper, être incomplète ou s'arrêter sur un quota. Elle utilise des catalogues publics et un service Mistral commun, dont les crédits sont partagés. Les résultats directs restent locaux ; le service Mistral peut réutiliser des fiches mises en cache. **Les corrections des lecteurs ne constituent pas encore une base collaborative.**
+Panel detection can miss panels, place them in the wrong order or crop a balloon imperfectly. Full-page reading and zoom remain available. The latest complete private engine baseline had failing criteria on 15 of 61 pages across 340 variants; this is not a success-rate estimate for all comics. This bilingual release does not change the detection algorithm.
 
-Les titres et indices bibliographiques, et parfois une miniature de couverture, peuvent être envoyés aux services de recherche. La BD complète et la progression ne sont pas transmises au service bibliographique. Consultez [Données et confidentialité](PRIVACY.md) avant d'utiliser ces fonctions.
+Book-information lookup uses public catalogues and a shared Mistral service. It needs Internet, may return incomplete information and has shared quotas. Bibliographic clues and sometimes a cover thumbnail may be sent to these services. Full books and reading progress are not sent to the metadata service. Read the [privacy information](PRIVACY.md).
 
-## Code, contributions et licences
+Direct catalogue results stay local; the Mistral service reuses cached matches. Reader corrections are **not yet a shared, editable community database**. Reading locally available books and detecting panels work without that service.
 
-Application Kotlin/Jetpack Compose, détection embarquée LiteRT, lecture d'archives native et services bibliographiques Python/JavaScript. Le code de l'application, du moteur et du service est ouvert. Les secrets et corpus privés sont exclus.
+## Open source
 
-- [Compiler, tester et publier](docs/RELEASING.md)
-- [Contribuer et envoyer des retours](CONTRIBUTING.md)
-- [Signaler une vulnérabilité en privé](SECURITY.md)
-- [Licence AGPL-3.0-or-later](LICENSE) et [crédits des composants et du modèle](NOTICE)
+Kotlin / Jetpack Compose application, on-device LiteRT detection, native archive support and Python/JavaScript metadata services. Application and service code are open; private books, reference annotations and credentials are excluded.
 
-Les dépendances et poids tiers conservent leurs licences. Les fichiers de BD des utilisateurs ne sont pas couverts par la licence du code. Le modèle embarqué est fourni avec sa provenance ; ses données d'entraînement ne sont pas distribuées. La fixture HTML de test éditeur est synthétique ; les notices BnF sont réutilisées sous Licence Ouverte.
+- [Build, test and release](docs/RELEASING.md)
+- [Contribute and give feedback](CONTRIBUTING.md)
+- [Report security issues privately](SECURITY.md)
+- [AGPL-3.0-or-later licence](LICENSE) and [third-party notices](NOTICE)
 
-## English
-
-BubbleBD is a free, open-source Android reader for your own comics. It combines on-device automatic panel detection, a local library with series and reading progress, PDF/CBZ/CBR support, and sourced book information. Android 8+, ARM64 or x86_64. No BubbleBD account, ads or in-app purchases.
-
-**[Download the Android beta](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.32-beta.1)** · **[Volunteer to test](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** · [Report a problem](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml)
-
-We are looking for real readers to help improve the app and possibly prepare a Google Play release. The Google Play closed test has not started. Panel detection is imperfect; the shared Mistral metadata service needs Internet and has limited quotas. Read the [privacy information](PRIVACY.md) before using metadata lookup. Comics are not included. Issues are public: do not post private books, personal information or your Google account address. Feedback in English is welcome.
+Third-party components and model weights retain their licences. The code licence does not cover users' comics. Training data is not redistributed. The publisher HTML test fixture is synthetic; BnF catalogue fixtures are reused under the French Open Licence.

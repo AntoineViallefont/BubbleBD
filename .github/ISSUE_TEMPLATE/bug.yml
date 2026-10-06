@@ -1,47 +1,48 @@
-name: Signaler un problème
-description: Lecture, détection, bibliothèque ou informations d'un album
-title: "[Problème] "
+name: English — Report a problem
+description: Reading, panel detection, library or book information
+title: "[Bug] "
 labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: "Merci pour votre retour. Ce ticket sera public : ne joignez aucune BD complète, donnée personnelle ou clé. Une capture est facultative et doit pouvoir être partagée légalement."
+      value: "Thanks for helping. This issue is PUBLIC: do not include full comics, personal information or credentials. Screenshots are optional and must be yours to share legally."
   - type: input
     id: version
     attributes:
-      label: Version de BubbleBD
-      description: Visible dans Réglages → À propos
-      placeholder: "Par exemple : 0.3.32"
+      label: BubbleBD version
+      description: Shown in Settings → About
+      placeholder: "For example: 0.3.33"
     validations:
       required: true
   - type: input
     id: device
     attributes:
-      label: Téléphone et version Android
-      placeholder: "Par exemple : Samsung Galaxy S23 Ultra, Android 16"
+      label: Phone and Android version
+      placeholder: "For example: Samsung Galaxy S23 Ultra, Android 16"
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: Fonction concernée
+      label: Affected feature
       options:
-        - Lecture et détection des cases
-        - Import et bibliothèque
-        - Recherche des informations BD
-        - OneDrive
-        - Autre
+        - Reading and panel detection
+        - Import and library
+        - Book information lookup
+        - OneDrive or Android storage provider
+        - Language or translation
+        - Other
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Que s'est-il passé ?
-      description: Décrivez les étapes et le résultat attendu. Précisez le format PDF, CBZ ou CBR si pertinent.
+      label: What happened?
+      description: Describe the steps and what you expected. Include the file format (PDF, CBZ or CBR) if relevant.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Informations complémentaires
-      description: Facultatif. Pour le découpage, décrivez la disposition et indiquez si la page entière reste lisible. Ne joignez que des éléments que vous avez le droit de publier.
+      label: Additional information
+      description: Optional. For panel detection, describe the layout and whether the full page remains readable. Share only material you have permission to publish.

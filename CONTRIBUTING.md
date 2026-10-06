@@ -1,40 +1,38 @@
-# Contribuer à BubbleBD
+# Contributing to BubbleBD
 
-Les retours de lecture comptent autant que les contributions au code.
+[Français](CONTRIBUTING.fr.md)
 
-## Signaler un problème
+Reader feedback is as valuable as code. Use the issue forms to [report a problem](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml), [suggest an improvement](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml), or [volunteer to test](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml). English and French are welcome.
 
-Ouvrez [un signalement](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml). Indiquez le téléphone, la version Android, la version de BubbleBD, les étapes et ce que vous attendiez. Pour un problème de découpage, précisez si la lecture en page entière fonctionne.
+Issues are public. Your GitHub username is sufficient; do not post a Google email address, credentials, private comics or personal data. Only attach screenshots you have the right to share. For a panel-detection problem, describe the layout, gestures and whether full-page reading still works.
 
-Les signalements sont publics. Ne joignez pas de BD complète, de clé, de compte ou d'information personnelle. Une capture n'est utile que si vous avez le droit de la partager. Décrivez sinon la disposition des cases et les gestes effectués. Un compte GitHub gratuit est nécessaire pour participer.
+## Code
 
-## Proposer une amélioration
+Discuss substantial changes in an issue first, then submit a pull request from your fork. Preserve original files, reading progress, local reading and the absence of a BubbleBD account. Describe the before/after behaviour and checks performed. Contributions use AGPL-3.0-or-later, respecting third-party licences.
 
-Utilisez [le formulaire de suggestion](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml). Décrivez d'abord le besoin rencontré pendant la lecture. Les propositions de corrections bibliographiques restent des suggestions : il n'existe pas encore de contribution directe des lecteurs à une base de fiches modifiable.
+Detection rules must be general: no exceptions based on a book title, filename or page. Never change approved references or weaken assertions to hide a regression.
 
-## Contribuer au code
+## Translations
 
-1. Discutez d'une modification importante dans un ticket avant de l'implémenter.
-2. Créez un fork et une branche dédiée.
-3. Préservez la lecture locale, l'absence de compte BubbleBD, la progression et les fichiers originaux.
-4. Décrivez le comportement avant/après et les vérifications exécutées dans votre pull request.
-5. Contribuez sous AGPL-3.0-or-later, en respectant les licences des composants tiers.
+Presentation strings are centralised in `app/src/main/java/fr/bubblebd/UiCatalog.kt`. French labels also exist as historical internal keys. Translate their presentation only; do not translate persisted sorting/filter keys, book titles, summaries or filenames. Keep numbered placeholders unchanged. `UiTextTest` checks placeholder parity and data preservation. Android supports English and French through `locales_config.xml`; other phone languages use the English interface.
 
-Les règles de détection doivent rester générales : aucune exception par titre, nom de fichier ou page. Ne modifiez pas des références ou des assertions pour dissimuler une régression.
+## Checks
 
-## Tests
-
-`./scripts/build.sh` compile l'app, lance les tests JVM et lint. `./scripts/build.sh --compile-only` compile sans tests. Android Studio et le SDK/NDK indiqués dans le README sont nécessaires.
-
-Les tests Android passent par `./scripts/test-device.sh`, uniquement sur l'AVD dédié `BubbleBD_Test_API_36_1`, port 5580. Ce script peut réinitialiser les données de l'app de test. Ne l'utilisez pas sur un téléphone personnel.
-
-Le code des tests est ouvert. Les planches privées ne sont pas redistribuées : certains tests sont ignorés ou ne peuvent pas être exécutés sans ces données. Une compilation publique ou un compte de cases concordant ne constitue pas une validation complète du lecteur. Le mainteneur exécute la régression privée avant de retenir une évolution du moteur.
-
-Tests indépendants du service bibliographique :
+Install the tools listed in [the build guide](docs/RELEASING.md), then run:
 
 ```sh
+./scripts/build.sh
 python3 -m unittest discover -s services/metadata -v
 node --test services/metadata/worker/test-worker.mjs
 ```
 
-Node 22.13 ou supérieur avec `node:sqlite` est nécessaire. Aucun appel Mistral réel ni paiement n'est nécessaire pour ces tests hors ligne.
+Node 22.13+ with `node:sqlite` is required. Backend tests are offline and need no provider key or payment.
+
+Android checks must use `scripts/test-device.sh` on the dedicated `BubbleBD_Test_API_36_1` AVD at port 5580. They reset test data. Never target a personal phone. Examples:
+
+```sh
+BUBBLEBD_TEST_LANGUAGE=en ./scripts/test-device.sh -Pandroid.testInstrumentationRunnerArguments.class=fr.bubblebd.LocalizationTest -Pandroid.testInstrumentationRunnerArguments.localizationLanguage=en
+BUBBLEBD_TEST_LANGUAGE=fr ./scripts/test-device.sh -Pandroid.testInstrumentationRunnerArguments.class=fr.bubblebd.LocalizationTest -Pandroid.testInstrumentationRunnerArguments.localizationLanguage=fr
+```
+
+Private regression images are deliberately absent. Some tests are skipped or cannot run without them. Public builds do not establish complete detection accuracy. The maintainer runs the full private regression suite when changing the detection engine.

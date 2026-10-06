@@ -18,7 +18,7 @@ else
   ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --console=plain
 fi
 mkdir -p distribution
-cp app/build/outputs/apk/debug/app-debug.apk distribution/BubbleBD-0.3.32.apk
-printf '\nAPK : %s/distribution/BubbleBD-0.3.32.apk\n' "$PWD"
+cp app/build/outputs/apk/debug/app-debug.apk distribution/BubbleBD-0.3.33.apk
+printf '\nAPK : %s/distribution/BubbleBD-0.3.33.apk\n' "$PWD"
 
 python3 scripts/package-source.py
