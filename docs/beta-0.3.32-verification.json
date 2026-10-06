@@ -1,0 +1,43 @@
+{
+  "version": "0.3.32",
+  "versionCode": 37,
+  "date": "2026-10-06",
+  "apk_sha256": "c7f31d303a247e24f3b676159453104e43dd5881e60ebb4ec21343bdd17c95a0",
+  "signing_certificate_sha256": "c8fe1a0129e6dc2f98a9685e512ce8a43b7816718aae93970476ef37092d96f9",
+  "production_source_files_unchanged": 93,
+  "jvm_private_checkout": {
+    "passed": 186,
+    "skipped": 1,
+    "failed": 0
+  },
+  "jvm_public_checkout": {
+    "passed": 185,
+    "skipped": 2,
+    "failed": 0
+  },
+  "public_skips": [
+    "BridgedInsetsReplayTest.approvedFramesBridgingTwoScenesRemainSeparateAndReadable: private corpus absent",
+    "ResolutionReplayTest.exportFrozenResolutionEvidence: optional diagnostic"
+  ],
+  "lint_release": "passed",
+  "public_build_and_lint_debug": "passed",
+  "android_targeted": {
+    "passed": 4,
+    "failed": 0,
+    "avd": "BubbleBD_Test_API_36_1",
+    "api": 36
+  },
+  "signed_release_startup": "passed on dedicated x86_64 emulator",
+  "backend_python": {
+    "passed": 34,
+    "failed": 0
+  },
+  "backend_node": {
+    "passed": 18,
+    "failed": 0
+  },
+  "native_16k_alignment": "checked; runtime 16k page-size device not tested",
+  "full_private_corpus_rerun": false,
+  "known_reader_limits": "15 pages with failing criteria in latest 61-page / 340-variant private baseline; engine unchanged",
+  "physical_phone_validation": "not performed for this signed beta"
+}
