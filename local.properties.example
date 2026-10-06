@@ -1,0 +1,10 @@
+# Android Studio peut générer sdk.dir automatiquement.
+# Exemple macOS, à adapter : sdk.dir=/Users/votre-nom/Library/Android/sdk
+sdk.dir=
+
+# Facultatif : identifiant public de votre application Microsoft.
+onedrive.clientId=
+
+# Vide : catalogues directs uniquement. Pour votre propre service, renseigner son URL HTTPS.
+# Aucune clé Mistral ne doit être placée ici.
+metadata.endpoint=

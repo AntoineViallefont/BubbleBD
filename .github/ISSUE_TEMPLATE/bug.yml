@@ -1,0 +1,47 @@
+name: Signaler un problème
+description: Lecture, détection, bibliothèque ou informations d'un album
+title: "[Problème] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Merci pour votre retour. Ce ticket sera public : ne joignez aucune BD complète, donnée personnelle ou clé. Une capture est facultative et doit pouvoir être partagée légalement."
+  - type: input
+    id: version
+    attributes:
+      label: Version de BubbleBD
+      description: Visible dans Réglages → À propos
+      placeholder: "Par exemple : 0.3.32"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Téléphone et version Android
+      placeholder: "Par exemple : Samsung Galaxy S23 Ultra, Android 16"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Fonction concernée
+      options:
+        - Lecture et détection des cases
+        - Import et bibliothèque
+        - Recherche des informations BD
+        - OneDrive
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Que s'est-il passé ?
+      description: Décrivez les étapes et le résultat attendu. Précisez le format PDF, CBZ ou CBR si pertinent.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Informations complémentaires
+      description: Facultatif. Pour le découpage, décrivez la disposition et indiquez si la page entière reste lisible. Ne joignez que des éléments que vous avez le droit de publier.

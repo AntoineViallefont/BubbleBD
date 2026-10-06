@@ -1,0 +1,133 @@
+<ns0:record xmlns:ns0="info:lc/xmlns/marcxchange-v2" format="UNIMARC" id="ark:/12148/cb47173853k" type="Bibliographic">
+<ns0:leader>     cam  22        450 </ns0:leader>
+<ns0:controlfield tag="001">FRBNF471738530000006</ns0:controlfield>
+<ns0:controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb47173853k</ns0:controlfield>
+<ns0:datafield tag="010" ind1=" " ind2=" ">
+<ns0:subfield code="a">978-2-491467-02-9</ns0:subfield>
+<ns0:subfield code="b">rel.</ns0:subfield>
+<ns0:subfield code="d">18,90 EUR</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="020" ind1=" " ind2=" ">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">02336770</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="073" ind1=" " ind2="0">
+<ns0:subfield code="a">9782491467029</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="100" ind1=" " ind2=" ">
+<ns0:subfield code="a">20230124d2022    m  y0frey50      ba</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="101" ind1="0" ind2=" ">
+<ns0:subfield code="a">fre</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="102" ind1=" " ind2=" ">
+<ns0:subfield code="a">FR</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="105" ind1=" " ind2=" ">
+<ns0:subfield code="a">||||t   00|a|</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="106" ind1=" " ind2=" ">
+<ns0:subfield code="a">r</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">i </ns0:subfield>
+<ns0:subfield code="b">xxxe  </ns0:subfield>
+<ns0:subfield code="a">b </ns0:subfield>
+<ns0:subfield code="b">xb2e  </ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">txt</ns0:subfield>
+<ns0:subfield code="c">sti</ns0:subfield>
+<ns0:subfield code="2">rdacontent</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">n</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">n</ns0:subfield>
+<ns0:subfield code="2">rdamedia</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="200" ind1="1" ind2=" ">
+<ns0:subfield code="a">Atom[ka]</ns0:subfield>
+<ns0:subfield code="b">Texte imprimé</ns0:subfield>
+<ns0:subfield code="f">[scénario], Sylvain Runberg</ns0:subfield>
+<ns0:subfield code="g">[dessin], Luc Brahy</ns0:subfield>
+<ns0:subfield code="g">[couleur], Greg Lofé</ns0:subfield>
+<ns0:subfield code="g">d'après Franck Thilliez</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="0">
+<ns0:subfield code="a">Paris</ns0:subfield>
+<ns0:subfield code="c">Philéas</ns0:subfield>
+<ns0:subfield code="d">DL 2022</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="3">
+<ns0:subfield code="a">91-Palaiseau</ns0:subfield>
+<ns0:subfield code="c">Impr. PPO graphic</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="215" ind1=" " ind2=" ">
+<ns0:subfield code="a">1 vol. (104 p.)</ns0:subfield>
+<ns0:subfield code="c">ill. en coul.</ns0:subfield>
+<ns0:subfield code="d">29 cm</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="312" ind1=" " ind2=" ">
+<ns0:subfield code="a">Autre forme de titre : Atomka</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="330" ind1=" " ind2=" ">
+<ns0:subfield code="a">Un journaliste de faits divers retrouvé mort de froid dans son congélateur, des femmes enlevées retrouvées entre la vie et la mort dans un lac gelé, un enfant d'Europe de l'Est errant, malade, avec un tatouage étrange et pour seule destination l'adresse d'une reporter disparue... Henebelle et Sharko se retrouvent de nouveau face à leurs vieux démons ! Entre le moment où s'arrête la vie et celui où commence la mort il existe une frontière. Certains l'ont explorée... Dernier opus de la Trilogie de la Violence de Franck Thilliez, réunissant de nouveau Lucie Henebelle et Franck Sharko ! 1986. Tchernobyl. Ukraine. Une catastrophe nucléaire sans précédent sur le Vieux Continent. De nos jours, un journaliste retrouvé mort de froid dans son congélateur, des femmes enlevées retrouvées entre la vie et la mort dans un lac gelé, un enfant d'Europe de l'Est errant, malade, avec un tatouage étrange et pour seule destination l'adresse d'une reporter disparue... Quels sont les liens entre ces évènements qui vont obliger Henebelle et Sharko à enquêter en France, aux USA, en Ukraine, sur fond de meurtres en série et d'un conflit qui gronde aux portes de l'Europe ?</ns0:subfield>
+<ns0:subfield code="2">éditeur</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="517" ind1="1" ind2=" ">
+<ns0:subfield code="a">Atomka</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="686" ind1=" " ind2=" ">
+<ns0:subfield code="a">805</ns0:subfield>
+<ns0:subfield code="2">Cadre de classement de la Bibliographie nationale française</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="700" ind1=" " ind2="|">
+<ns0:subfield code="3">14587202</ns0:subfield>
+<ns0:subfield code="o">ISNI0000000121313418</ns0:subfield>
+<ns0:subfield code="a">Runberg</ns0:subfield>
+<ns0:subfield code="b">Sylvain</ns0:subfield>
+<ns0:subfield code="f">1971-....</ns0:subfield>
+<ns0:subfield code="4">070</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="702" ind1=" " ind2="|">
+<ns0:subfield code="3">14478713</ns0:subfield>
+<ns0:subfield code="o">ISNI0000000121411595</ns0:subfield>
+<ns0:subfield code="a">Thilliez</ns0:subfield>
+<ns0:subfield code="b">Franck</ns0:subfield>
+<ns0:subfield code="f">1973-....</ns0:subfield>
+<ns0:subfield code="4">100</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="702" ind1=" " ind2="|">
+<ns0:subfield code="3">12922919</ns0:subfield>
+<ns0:subfield code="o">ISNI0000000071014144</ns0:subfield>
+<ns0:subfield code="a">Brahy</ns0:subfield>
+<ns0:subfield code="b">Luc</ns0:subfield>
+<ns0:subfield code="f">1964-....</ns0:subfield>
+<ns0:subfield code="4">440</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="801" ind1=" " ind2="0">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">FR-751131015</ns0:subfield>
+<ns0:subfield code="c">20230124</ns0:subfield>
+<ns0:subfield code="g">AFNOR</ns0:subfield>
+<ns0:subfield code="h">FRBNF471738530000006</ns0:subfield>
+<ns0:subfield code="2">intermrc</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="856" ind1=" " ind2="2">
+<ns0:subfield code="u">727223</ns0:subfield>
+<ns0:subfield code="b">Première de couverture</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="930" ind1=" " ind2=" ">
+<ns0:subfield code="5">FR-751131010:47173853001001</ns0:subfield>
+<ns0:subfield code="a">2023-25322</ns0:subfield>
+<ns0:subfield code="b">759999999</ns0:subfield>
+<ns0:subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</ns0:subfield>
+<ns0:subfield code="d">O</ns0:subfield>
+</ns0:datafield>
+</ns0:record>      

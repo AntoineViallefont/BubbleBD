@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12 masks this drawable to a circle. Keep the complete logo in its safe area. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="25%">
+    <bitmap android:src="@drawable/splash_rounded" android:gravity="fill" />
+</inset>

@@ -1,0 +1,11 @@
+<resources>
+    <color name="launch_background">#FAFAF8</color>
+    <style name="Theme.BubbleBD.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorAccent">#479DEC</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="Theme.BubbleBD" parent="Theme.BubbleBD.Base" />
+</resources>

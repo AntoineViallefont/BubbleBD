@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/launch_background" />
+    <item android:width="112dp" android:height="112dp" android:gravity="center" android:drawable="@drawable/splash_rounded" />
+    <item android:width="200dp" android:height="80dp" android:gravity="bottom|center_horizontal" android:bottom="48dp" android:drawable="@drawable/launch_branding" />
+</layer-list>

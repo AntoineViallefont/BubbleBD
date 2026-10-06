@@ -1,0 +1,290 @@
+<records xmlns:ns0="info:lc/xmlns/marcxchange-v2"><ns0:record format="UNIMARC" id="ark:/12148/cb47620768f" type="Bibliographic">
+<ns0:leader>     nam  22        450 </ns0:leader>
+<ns0:controlfield tag="001">FRBNF476207680000005</ns0:controlfield>
+<ns0:controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb47620768f</ns0:controlfield>
+<ns0:datafield tag="010" ind1=" " ind2=" ">
+<ns0:subfield code="b">Rel.</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="100" ind1=" " ind2=" ">
+<ns0:subfield code="a">20241219g2024    m  y0frey50      ba</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="101" ind1="0" ind2=" ">
+<ns0:subfield code="a">fre</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="102" ind1=" " ind2=" ">
+<ns0:subfield code="a">BE</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="105" ind1=" " ind2=" ">
+<ns0:subfield code="a">||||t   00|a|</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="106" ind1=" " ind2=" ">
+<ns0:subfield code="a">r</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">i </ns0:subfield>
+<ns0:subfield code="b">xxxe  </ns0:subfield>
+<ns0:subfield code="a">b </ns0:subfield>
+<ns0:subfield code="b">xb2e  </ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">txt</ns0:subfield>
+<ns0:subfield code="c">sti</ns0:subfield>
+<ns0:subfield code="2">rdacontent</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">n</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">n</ns0:subfield>
+<ns0:subfield code="2">rdamedia</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="200" ind1="1" ind2=" ">
+<ns0:subfield code="a">L'île de minuit</ns0:subfield>
+<ns0:subfield code="b">Texte imprimé</ns0:subfield>
+<ns0:subfield code="f">scénario : Lylian</ns0:subfield>
+<ns0:subfield code="g">dessin et couleur : Nicolas Grebil</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="0">
+<ns0:subfield code="a">Marcinelle</ns0:subfield>
+<ns0:subfield code="c">Dupuis</ns0:subfield>
+<ns0:subfield code="d">DL 2024-</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="215" ind1=" " ind2=" ">
+<ns0:subfield code="d">30 cm</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="700" ind1=" " ind2="|">
+<ns0:subfield code="3">14524892</ns0:subfield>
+<ns0:subfield code="o">ISNI0000000001044663</ns0:subfield>
+<ns0:subfield code="a">Lylian</ns0:subfield>
+<ns0:subfield code="f">1975-....</ns0:subfield>
+<ns0:subfield code="4">070</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="702" ind1=" " ind2="|">
+<ns0:subfield code="3">16935794</ns0:subfield>
+<ns0:subfield code="a">Grebil</ns0:subfield>
+<ns0:subfield code="b">Nicolas</ns0:subfield>
+<ns0:subfield code="f">1990-....</ns0:subfield>
+<ns0:subfield code="4">440</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="801" ind1=" " ind2="0">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">FR-751131015</ns0:subfield>
+<ns0:subfield code="c">20241219</ns0:subfield>
+<ns0:subfield code="g">AFNOR</ns0:subfield>
+<ns0:subfield code="h">FRBNF476207680000005</ns0:subfield>
+<ns0:subfield code="2">intermrc</ns0:subfield>
+</ns0:datafield>
+</ns0:record>      <ns0:record format="UNIMARC" id="ark:/12148/cb47600012g" type="Bibliographic">
+<ns0:leader>     cam  22        450 </ns0:leader>
+<ns0:controlfield tag="001">FRBNF476000120000004</ns0:controlfield>
+<ns0:controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb47600012g</ns0:controlfield>
+<ns0:datafield tag="010" ind1=" " ind2=" ">
+<ns0:subfield code="a">978-2-8085-0326-6</ns0:subfield>
+<ns0:subfield code="b">rel.</ns0:subfield>
+<ns0:subfield code="d">12,95 EUR</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="020" ind1=" " ind2=" ">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">02504439</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="073" ind1=" " ind2="0">
+<ns0:subfield code="a">9782808503266</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="100" ind1=" " ind2=" ">
+<ns0:subfield code="a">20241118d2024    m  y0frey50      ba</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="101" ind1="0" ind2=" ">
+<ns0:subfield code="a">fre</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="102" ind1=" " ind2=" ">
+<ns0:subfield code="a">BE</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="105" ind1=" " ind2=" ">
+<ns0:subfield code="a">||||t   00|a|</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="106" ind1=" " ind2=" ">
+<ns0:subfield code="a">r</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">i </ns0:subfield>
+<ns0:subfield code="b">xxxe  </ns0:subfield>
+<ns0:subfield code="a">b </ns0:subfield>
+<ns0:subfield code="b">xb2e  </ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">txt</ns0:subfield>
+<ns0:subfield code="c">sti</ns0:subfield>
+<ns0:subfield code="2">rdacontent</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">n</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">n</ns0:subfield>
+<ns0:subfield code="2">rdamedia</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="200" ind1="1" ind2=" ">
+<ns0:subfield code="a">Le réveil de l'automate</ns0:subfield>
+<ns0:subfield code="b">Texte imprimé</ns0:subfield>
+<ns0:subfield code="f">scénario, Lylian</ns0:subfield>
+<ns0:subfield code="g">dessin et couleurs, Nicolas Grebil</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="0">
+<ns0:subfield code="a">Marcinelle (Belgique)</ns0:subfield>
+<ns0:subfield code="a">[Paris]</ns0:subfield>
+<ns0:subfield code="c">Dupuis</ns0:subfield>
+<ns0:subfield code="d">DL 2024</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="3">
+<ns0:subfield code="a">impr. en Belgique</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="215" ind1=" " ind2=" ">
+<ns0:subfield code="a">1 vol. (72 p.)</ns0:subfield>
+<ns0:subfield code="c">ill. en coul.</ns0:subfield>
+<ns0:subfield code="d">30 cm</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="225" ind1="1" ind2="9">
+<ns0:subfield code="a">L'île de minuit</ns0:subfield>
+<ns0:subfield code="v">1</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="329" ind1=" " ind2=" ">
+<ns0:subfield code="c">Pourquoi pas ?</ns0:subfield>
+<ns0:subfield code="2">CNLJ</ns0:subfield>
+<ns0:subfield code="k">Avis critique donné par le Centre national de la littérature pour la jeunesse</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="333" ind1=" " ind2=" ">
+<ns0:subfield code="a">À partir de 11 ans</ns0:subfield>
+<ns0:subfield code="2">CNLJ</ns0:subfield>
+<ns0:subfield code="k">Avis critique donné par le Centre national de la littérature pour la jeunesse</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="461" ind1=" " ind2="0">
+<ns0:subfield code="0">47620768</ns0:subfield>
+<ns0:subfield code="t">L'île de minuit</ns0:subfield>
+<ns0:subfield code="v">1</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="608" ind1=" " ind2=" ">
+<ns0:subfield code="a">Bandes dessinées</ns0:subfield>
+<ns0:subfield code="2">CNLJ</ns0:subfield>
+<ns0:subfield code="k">Avis critique donné par le Centre national de la littérature pour la jeunesse</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="686" ind1=" " ind2=" ">
+<ns0:subfield code="a">805</ns0:subfield>
+<ns0:subfield code="2">Cadre de classement de la Bibliographie nationale française</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="700" ind1=" " ind2="|">
+<ns0:subfield code="3">14524892</ns0:subfield>
+<ns0:subfield code="o">ISNI0000000001044663</ns0:subfield>
+<ns0:subfield code="a">Lylian</ns0:subfield>
+<ns0:subfield code="f">1975-....</ns0:subfield>
+<ns0:subfield code="4">070</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="702" ind1=" " ind2="|">
+<ns0:subfield code="3">16935794</ns0:subfield>
+<ns0:subfield code="a">Grebil</ns0:subfield>
+<ns0:subfield code="b">Nicolas</ns0:subfield>
+<ns0:subfield code="f">1990-....</ns0:subfield>
+<ns0:subfield code="4">440</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="801" ind1=" " ind2="0">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">FR-751131015</ns0:subfield>
+<ns0:subfield code="c">20241118</ns0:subfield>
+<ns0:subfield code="g">AFNOR</ns0:subfield>
+<ns0:subfield code="h">FRBNF476000120000004</ns0:subfield>
+<ns0:subfield code="2">intermrc</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="930" ind1=" " ind2=" ">
+<ns0:subfield code="5">FR-751131010:47600012001001</ns0:subfield>
+<ns0:subfield code="a">2024-248179</ns0:subfield>
+<ns0:subfield code="b">759999999</ns0:subfield>
+<ns0:subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</ns0:subfield>
+<ns0:subfield code="d">O</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="930" ind1=" " ind2=" ">
+<ns0:subfield code="5">FR-751131010:47600012002001</ns0:subfield>
+<ns0:subfield code="a">-Littérature et art- Salle I -Actualité de l'édition</ns0:subfield>
+<ns0:subfield code="b">759999999</ns0:subfield>
+<ns0:subfield code="c">Tolbiac - Haut de Jardin - Littérature et art - Libre accès</ns0:subfield>
+<ns0:subfield code="d">N</ns0:subfield>
+</ns0:datafield>
+</ns0:record>      <ns0:record format="UNIMARC" id="ark:/12148/cb48709652v" type="Bibliographic">
+<ns0:leader>     nam  22        450 </ns0:leader>
+<ns0:controlfield tag="001">FRBNF487096520000008</ns0:controlfield>
+<ns0:controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb48709652v</ns0:controlfield>
+<ns0:datafield tag="010" ind1=" " ind2=" ">
+<ns0:subfield code="a">978-2-8085-1089-9</ns0:subfield>
+<ns0:subfield code="b">rel.</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="073" ind1=" " ind2="0">
+<ns0:subfield code="a">9782808510899</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="100" ind1=" " ind2=" ">
+<ns0:subfield code="a">20260223d2026    m  y0frey50      ba</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="101" ind1="0" ind2=" ">
+<ns0:subfield code="a">fre</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="102" ind1=" " ind2=" ">
+<ns0:subfield code="a">FR</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="105" ind1=" " ind2=" ">
+<ns0:subfield code="a">||||z   00|||</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="106" ind1=" " ind2=" ">
+<ns0:subfield code="a">r</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">i </ns0:subfield>
+<ns0:subfield code="b">xxxe  </ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="181" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">txt</ns0:subfield>
+<ns0:subfield code="2">rdacontent</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2="0">
+<ns0:subfield code="6">01</ns0:subfield>
+<ns0:subfield code="a">n</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="182" ind1=" " ind2=" ">
+<ns0:subfield code="6">02</ns0:subfield>
+<ns0:subfield code="c">n</ns0:subfield>
+<ns0:subfield code="2">rdamedia</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="200" ind1="1" ind2=" ">
+<ns0:subfield code="a">La femme aux singes</ns0:subfield>
+<ns0:subfield code="b">Texte imprimé</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="214" ind1=" " ind2="0">
+<ns0:subfield code="c">Dupuis</ns0:subfield>
+<ns0:subfield code="d">2026</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="215" ind1=" " ind2=" ">
+<ns0:subfield code="a">1 vol. (56 p.)</ns0:subfield>
+<ns0:subfield code="d">30 cm</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="225" ind1="1" ind2=" ">
+<ns0:subfield code="a">L'île de minuit</ns0:subfield>
+<ns0:subfield code="v">2</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="700" ind1=" " ind2="|">
+<ns0:subfield code="a">Lylian</ns0:subfield>
+</ns0:datafield>
+<ns0:datafield tag="801" ind1=" " ind2="0">
+<ns0:subfield code="a">FR</ns0:subfield>
+<ns0:subfield code="b">FR-751131015</ns0:subfield>
+<ns0:subfield code="c">20260223</ns0:subfield>
+<ns0:subfield code="g">AFNOR</ns0:subfield>
+<ns0:subfield code="h">FRBNF487096520000008</ns0:subfield>
+<ns0:subfield code="2">intermrc</ns0:subfield>
+</ns0:datafield>
+</ns0:record>      </records>

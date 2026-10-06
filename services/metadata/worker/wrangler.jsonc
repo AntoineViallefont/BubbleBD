@@ -1,0 +1,9 @@
+{
+  "name": "bubblebd-metadata",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "observability": {"enabled": false},
+  "d1_databases": [{"binding": "DB", "database_name": "bubblebd-catalog", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID"}],
+  "assets": {"directory": "public", "binding": "SOURCE", "run_worker_first": true}
+}

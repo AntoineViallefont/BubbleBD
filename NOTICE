@@ -1,0 +1,37 @@
+BubbleBD
+Copyright (C) 2026 Antoine Viallefont.
+Application code: GNU Affero General Public License, version 3 or later.
+See LICENSE. Third-party components retain their respective licenses.
+
+Embedded manga panel/text detector:
+Author: Leandro Narosky (leoxs22).
+Source: https://huggingface.co/leoxs22/manga-panel-detector-yolo26n
+Revision: 40a2854663d537563cfb95c370288a84c6505b9a
+File: manga_panel_detector_int8.tflite
+SHA256: b1a7d8d4492e04a777ae0d3efd9dc1fbd6e8f361971eadb813279ce3dfd1b464
+Weights: AGPL-3.0 (the author's former Apache-2.0 designation was corrected).
+Based on Ultralytics YOLO26n, Copyright Ultralytics, AGPL-3.0.
+Trained on Manga109-s. No dataset images or annotations are distributed.
+Dataset reference: Kiyoharu Aizawa et al., Building a Manga Dataset “Manga109”
+with Annotations for Multimedia Applications, IEEE MultiMedia 27(2), 2020,
+doi:10.1109/mmul.2020.2987895.
+The embedded INT8 weight file is unmodified.
+
+LiteRT: Google, Apache-2.0.
+Other dependencies are specified in app/build.gradle.kts and
+app/src/main/cpp/CMakeLists.txt. Existing third-party licenses remain applicable.
+
+Bibliographic metadata / test fixture:
+Bibliothèque nationale de France, Catalogue général, retrieved 2026-09-27.
+Metadata reused under the French Open Licence (Licence Ouverte de l'État).
+Source: https://catalogue.bnf.fr/ark:/12148/cb47620768f
+API: https://api.bnf.fr/fr/api-sru-catalogue-general
+Each enriched book retains its individual source catalogue URL(s).
+
+Tesseract4Android 4.9.0: adaptech s.r.o., Apache-2.0.
+https://github.com/adaptech-cz/Tesseract4Android
+French tessdata_fast model: see app/src/main/assets/ocr/NOTICE.txt and LICENSE.
+BnF Atomka fixture: public catalogue metadata under the same Open Licence.
+
+AndroidX WorkManager 2.12.0: Google / Android Open Source Project, Apache-2.0.
+https://developer.android.com/jetpack/androidx/releases/work

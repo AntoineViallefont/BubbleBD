@@ -1,0 +1,1388 @@
+<records><record format="UNIMARC" id="ark:/12148/cb45358420c" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF453584200000000</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb45358420c</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-7560-8147-2</subfield>
+<subfield code="b">rel.</subfield>
+<subfield code="d">14,95 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">01759323</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPP</subfield>
+<subfield code="a">45345063</subfield>
+<subfield code="d">20171013</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782756081472</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20170928d2017    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">LN</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">DL 2017</subfield>
+<subfield code="e">impr. en Belgique</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (55 p.)</subfield>
+<subfield code="c">ill. en coul.</subfield>
+<subfield code="d">32 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="1" ind2="9">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="v">t2</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Néopolis</subfield>
+</datafield>
+<datafield tag="330" ind1=" " ind2=" ">
+<subfield code="a">Voici la suite de l'intrigue, où Jan, un des seuls rescapés après la mutation du virus de la grippe aviaire, parvient à rejoindre une communauté à Lyon, dix ans après l'épidémie. Mais, alors qu'il croira pouvoir y trouver une sorte de salut, il se sentira finalement encore plus seul et perdu, et devra échapper à d'étranges et redoutables hommes armés qui en veulent à sa vie...</subfield>
+<subfield code="2">éditeur</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34280292</subfield>
+<subfield code="t">Neopolis (Paris)</subfield>
+<subfield code="x">1248-5152</subfield>
+<subfield code="d">2017</subfield>
+</datafield>
+<datafield tag="461" ind1=" " ind2="0">
+<subfield code="0">45080875</subfield>
+<subfield code="t">Soleil froid</subfield>
+<subfield code="v">2</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+<subfield code="a">Bandes dessinées</subfield>
+<subfield code="2">CNLJ</subfield>
+<subfield code="k">Avis critique donné par le Centre national de la littérature pour la jeunesse</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">805</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20170928</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF453584200000000</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1=" " ind2="2">
+<subfield code="u">270108</subfield>
+<subfield code="b">Première de couverture</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45358420001001</subfield>
+<subfield code="a">2017-229400</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45358420002001</subfield>
+<subfield code="a">-Littérature et art- Salle I -Actualité de l'édition</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Haut de Jardin - Littérature et art - Libre accès</subfield>
+<subfield code="d">N</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb45034844k" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF450348440000000</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb45034844k</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-7560-6207-5</subfield>
+<subfield code="b">rel.</subfield>
+<subfield code="d">14,50 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">01643534</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPP</subfield>
+<subfield code="a">45032841</subfield>
+<subfield code="d">20160511</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782756062075</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20160509d2016    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">H5N4</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">DL 2016</subfield>
+<subfield code="e">impr. en Belgique</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (55 p.)</subfield>
+<subfield code="c">ill. en coul.</subfield>
+<subfield code="d">32 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="1" ind2="9">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="v">1</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Néopolis</subfield>
+</datafield>
+<datafield tag="330" ind1=" " ind2=" ">
+<subfield code="a">Un homme avance dans les vallées alpines, accompagné d'un robot de portage L2S. Il cherche un refuge, loin des terres basses infestées par un virus mortel. Jan ne se fait pas d'illusions : les trois quarts de la population humaine ont été emportés par l'épidémie. Restent quelques foyers isolés et un fol espoir, presque une légende... Celle d'un labo qui aurait trouvé un remède contre la nouvelle peste...</subfield>
+<subfield code="2">éditeur</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34280292</subfield>
+<subfield code="t">Neopolis (Paris)</subfield>
+<subfield code="x">1248-5152</subfield>
+<subfield code="d">2016</subfield>
+</datafield>
+<datafield tag="461" ind1=" " ind2="0">
+<subfield code="0">45080875</subfield>
+<subfield code="t">Soleil froid</subfield>
+<subfield code="v">1</subfield>
+</datafield>
+<datafield tag="608" ind1=" " ind2=" ">
+<subfield code="a">Bandes dessinées</subfield>
+<subfield code="2">CNLJ</subfield>
+<subfield code="k">Avis critique donné par le Centre national de la littérature pour la jeunesse</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">805</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20160509</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF450348440000000</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1=" " ind2="2">
+<subfield code="u">197766</subfield>
+<subfield code="b">Première de couverture</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45034844001001</subfield>
+<subfield code="a">2016-118026</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45034844002001</subfield>
+<subfield code="a">-Littérature et art- Salle I -Actualité de l'édition</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Haut de Jardin - Littérature et art - Libre accès</subfield>
+<subfield code="d">N</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb35147490n" type="Bibliographic">
+<leader>     nam  22        450 </leader>
+<controlfield tag="001">FRBNF351474900000000</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb35147490n</controlfield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">07322288</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPL</subfield>
+<subfield code="a">009158208</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">19740101d1973    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|||</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">Pierre l'Écrivain</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">Paris</subfield>
+<subfield code="c">la Pensée universelle</subfield>
+<subfield code="d">1973</subfield>
+<subfield code="e">92-Châtillon-sous-Bagneux</subfield>
+<subfield code="g">Impr. S.E.G.</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (187 p.)</subfield>
+<subfield code="d">18 cm</subfield>
+</datafield>
+<datafield tag="300" ind1=" " ind2=" ">
+<subfield code="a">Br.: 21,40 F</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12761729</subfield>
+<subfield code="a">Pierre L'Écrivain</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">19740101</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF351474900000000</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:35147490001001</subfield>
+<subfield code="a">EL 8-Y-5592</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb474116367" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF474116360000001</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb474116367</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-37071-273-8</subfield>
+<subfield code="b">br.</subfield>
+<subfield code="d">18 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">02409552</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782370712738</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20240206d2023    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">René Ballet</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="0">
+<subfield code="a">[Montreuil]</subfield>
+<subfield code="c">le Temps des cerises</subfield>
+<subfield code="d">impr. 2023</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="3">
+<subfield code="a">31-Bruguières</subfield>
+<subfield code="c">Evoluprint</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (201 p.)</subfield>
+<subfield code="d">20 cm</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">803</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">11890013</subfield>
+<subfield code="o">ISNI0000000115910494</subfield>
+<subfield code="a">Ballet</subfield>
+<subfield code="b">René</subfield>
+<subfield code="f">1928-2017</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20240206</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF474116360000001</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:47411636001001</subfield>
+<subfield code="a">2024-32421</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb45691744v" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF45691744000000X</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb45691744v</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-7560-9755-8</subfield>
+<subfield code="b">br.</subfield>
+<subfield code="d">14,95 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">01929991</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782756097558</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20190319d2019    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">L'armée verte</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="0">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">DL 2019</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="3">
+<subfield code="a">impr. en Belgique</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (54 p.)</subfield>
+<subfield code="c">ill. en coul.</subfield>
+<subfield code="d">32 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="1" ind2="9">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="v">t3</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Néopolis</subfield>
+</datafield>
+<datafield tag="330" ind1=" " ind2=" ">
+<subfield code="a">Jan, l'ancien soldat, L.N. et Marguerite, le robot militaire, poursuivent leur traversée des montagnes à la recherche du camp franc. Entre les essaims de micro-robots tueurs et les commandos, bardés d'exo-technologie, la progression est poussive. Lorsque la situation se complique l'un d'entre eux va se sacrifier pour laisser les deux autres arriver à destination...</subfield>
+<subfield code="2">éditeur</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34280292</subfield>
+<subfield code="t">Neopolis (Paris)</subfield>
+<subfield code="x">1248-5152</subfield>
+<subfield code="d">2019</subfield>
+</datafield>
+<datafield tag="461" ind1=" " ind2="0">
+<subfield code="0">45080875</subfield>
+<subfield code="t">Soleil froid</subfield>
+<subfield code="v">3</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">805</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20190319</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF45691744000000X</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1=" " ind2="2">
+<subfield code="u">368731</subfield>
+<subfield code="b">Première de couverture</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45691744001001</subfield>
+<subfield code="a">2019-58832</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb45080875x" type="Bibliographic">
+<leader>     nam  22        450 </leader>
+<controlfield tag="001">FRBNF450808750000007</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb45080875x</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="b">Rel.</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20160718g2016    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">2016-</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="d">32 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Néopolis</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34280292</subfield>
+<subfield code="t">Neopolis (Paris)</subfield>
+<subfield code="x">1248-5152</subfield>
+<subfield code="d">2016-</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20160718</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF450808750000007</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb45023692f" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF450236920000009</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb45023692f</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-8061-0279-9</subfield>
+<subfield code="b">br.</subfield>
+<subfield code="d">11,50 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">01636755</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782806102799</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20160420d2016    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">BE</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="e">et autres nouvelles</subfield>
+<subfield code="e">nouvelles</subfield>
+<subfield code="f">Yann Frémy</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">Louvain-la-Neuve</subfield>
+<subfield code="c">Academia littératures</subfield>
+<subfield code="d">DL 2016</subfield>
+<subfield code="e">14-Condé-sur-Noireau</subfield>
+<subfield code="g">Impr. Corlet numérique</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (110 p.)</subfield>
+<subfield code="d">22 cm</subfield>
+</datafield>
+<datafield tag="300" ind1=" " ind2=" ">
+<subfield code="a">Diff. en France</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">803</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">16172811</subfield>
+<subfield code="o">ISNI000000007693568X</subfield>
+<subfield code="a">Frémy</subfield>
+<subfield code="b">Yann</subfield>
+<subfield code="f">1972-2021</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20160420</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF450236920000009</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:45023692001001</subfield>
+<subfield code="a">2016-102530</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb35032350j" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF350323500000000</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb35032350j</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">2-209-06182-2</subfield>
+<subfield code="b">br.</subfield>
+<subfield code="d">95 F</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">08928977</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPL</subfield>
+<subfield code="a">007214284</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">19890926d1989    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">René Ballet</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Messidor</subfield>
+<subfield code="d">1989</subfield>
+<subfield code="e">18-Saint-Amand-Montrond</subfield>
+<subfield code="g">Impr. SEPC</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (181 p.)</subfield>
+<subfield code="c">couv. ill. en coul.</subfield>
+<subfield code="d">22 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Lettres françaises</subfield>
+<subfield code="x">0981-5686</subfield>
+</datafield>
+<datafield tag="316" ind1=" " ind2=" ">
+<subfield code="5">FR-759999999:35032350003001</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34243850</subfield>
+<subfield code="t">Collection littéraire. Lettres françaises</subfield>
+<subfield code="x">0981-5686</subfield>
+<subfield code="d">1989</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">840</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">823</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">11890013</subfield>
+<subfield code="o">ISNI0000000115910494</subfield>
+<subfield code="a">Ballet</subfield>
+<subfield code="b">René</subfield>
+<subfield code="f">1928-2017</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">19890926</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF350323500000000</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1="4" ind2=" ">
+<subfield code="u">http://gallica.bnf.fr/ark:/12148/bpt6k33837908</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:35032350001001</subfield>
+<subfield code="a">8-Y2-105166</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751041002:35032350002001</subfield>
+<subfield code="a">8-K-8592</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Arsenal - Magasin</subfield>
+<subfield code="d">N</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-759999999:35032350003001</subfield>
+<subfield code="a">NUMM-3383790</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Document numérisé</subfield>
+<subfield code="d">N</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb48608112t" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF486081120000008</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb48608112t</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-413-09145-5</subfield>
+<subfield code="b">rel.</subfield>
+<subfield code="d">32,50 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">02555235</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782413091455</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20250926d2025    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="e">intégrale</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="0">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">DL 2025</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="3">
+<subfield code="a">76-Forges-les-Eaux</subfield>
+<subfield code="c">Impr. SEPEC-AGM</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol (165 p.)</subfield>
+<subfield code="c">ill. en coul</subfield>
+<subfield code="d">33 cm</subfield>
+</datafield>
+<datafield tag="300" ind1=" " ind2=" ">
+<subfield code="a">Réunit : "H5N4" ; "L.N." ; "L'armée verte"</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">H5N4</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">L.N.</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">L'armée verte</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">805</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20250926</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF486081120000008</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1=" " ind2="2">
+<subfield code="u">1120618</subfield>
+<subfield code="b">Première de couverture</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:48608112001001</subfield>
+<subfield code="a">2025-218978</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb35285337f" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF352853370000006</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb35285337f</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">2-243-00436-4</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">57701530</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPL</subfield>
+<subfield code="a">010802760</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">19780101d1976    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|||</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">Michel Lemoine</subfield>
+<subfield code="g">[aquarelle originale de l'auteur]</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">Paris</subfield>
+<subfield code="c">Éditions Saint-Germain-des-Prés</subfield>
+<subfield code="d">1976</subfield>
+<subfield code="e">30-Nîmes</subfield>
+<subfield code="g">Impr. du Castellum</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">29 p. - 1 f. de pl. en coul.</subfield>
+<subfield code="d">22 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Collection A l'écoute des sources</subfield>
+</datafield>
+<datafield tag="300" ind1=" " ind2=" ">
+<subfield code="a">Ed. originale. - Tiré à 20 ex. sur vergé de Hollande. Ex. n° 20</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34231653</subfield>
+<subfield code="t">Collection À l'écoute des sources</subfield>
+<subfield code="x">0395-3025</subfield>
+<subfield code="d">1976</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12090036</subfield>
+<subfield code="o">ISNI0000000121442535</subfield>
+<subfield code="a">Lemoine</subfield>
+<subfield code="b">Michel</subfield>
+<subfield code="c">médiéviste</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">19780101</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF352853370000006</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131011:35285337001001</subfield>
+<subfield code="a">RES P-YE-2346</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Réserve - Magasin</subfield>
+<subfield code="d">N</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb47239530w" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF472395300000000</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb47239530w</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">978-2-413-03869-6</subfield>
+<subfield code="b">rel.</subfield>
+<subfield code="d">28,50 EUR</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">02372461</subfield>
+</datafield>
+<datafield tag="073" ind1=" " ind2="0">
+<subfield code="a">9782413038696</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">20230504d2023    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||t   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+<subfield code="a">b </subfield>
+<subfield code="b">xb2e  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="c">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="e">intégrale</subfield>
+<subfield code="h">Tomes 1 à 3</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">scénario, Jean-Pierre Pécau</subfield>
+<subfield code="g">dessin &amp; couleur, Damien</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="0">
+<subfield code="a">[Paris]</subfield>
+<subfield code="c">Delcourt</subfield>
+<subfield code="d">DL 2023</subfield>
+</datafield>
+<datafield tag="214" ind1=" " ind2="3">
+<subfield code="a">impr. en Slovénie</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">1 vol. (165 p.)</subfield>
+<subfield code="c">ill. en coul.</subfield>
+<subfield code="d">33 cm</subfield>
+</datafield>
+<datafield tag="300" ind1=" " ind2=" ">
+<subfield code="a">Réunit : "H5N4" ; "LN" ; "L'armée verte"</subfield>
+</datafield>
+<datafield tag="330" ind1=" " ind2=" ">
+<subfield code="a">Un homme avance dans les vallées alpines, accompagné d'un robot de portage. Il cherche un refuge, loin des terres basses infestées par un virus mortel. Jan ne se fait pas d'illusions : les trois quarts de la population humaine ont été emportés par l'épidémie. Restent quelques foyers isolés et un fol espoir, presque une légende : Celle d'un labo qui aurait trouvé un remède contre la nouvelle peste.</subfield>
+<subfield code="2">éditeur</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">H5N4</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">LN</subfield>
+</datafield>
+<datafield tag="423" ind1=" " ind2="0">
+<subfield code="t">L'armée verte</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">805</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12702732</subfield>
+<subfield code="o">ISNI0000000121388778</subfield>
+<subfield code="a">Pécau</subfield>
+<subfield code="b">Jean-Pierre</subfield>
+<subfield code="f">1955-....</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="702" ind1=" " ind2="|">
+<subfield code="3">12540139</subfield>
+<subfield code="o">ISNI0000000080021506</subfield>
+<subfield code="a">Damien</subfield>
+<subfield code="f">1970-....</subfield>
+<subfield code="c">dessinateur</subfield>
+<subfield code="4">440</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">20230504</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF472395300000000</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="856" ind1=" " ind2="2">
+<subfield code="u">756818</subfield>
+<subfield code="b">Première de couverture</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:47239530001001</subfield>
+<subfield code="a">2023-102046</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      <record format="UNIMARC" id="ark:/12148/cb34595063r" type="Bibliographic">
+<leader>     cam  22        450 </leader>
+<controlfield tag="001">FRBNF34595063000000X</controlfield>
+<controlfield tag="003">http://catalogue.bnf.fr/ark:/12148/cb34595063r</controlfield>
+<datafield tag="010" ind1=" " ind2=" ">
+<subfield code="a">2-243-00436-4</subfield>
+<subfield code="b">br.</subfield>
+<subfield code="d">12 F</subfield>
+</datafield>
+<datafield tag="020" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+<subfield code="b">07808752</subfield>
+</datafield>
+<datafield tag="039" ind1=" " ind2=" ">
+<subfield code="o">OPL</subfield>
+<subfield code="a">000513775</subfield>
+</datafield>
+<datafield tag="100" ind1=" " ind2=" ">
+<subfield code="a">19780419d1976    m  y0frey50      ba</subfield>
+</datafield>
+<datafield tag="101" ind1="0" ind2=" ">
+<subfield code="a">fre</subfield>
+</datafield>
+<datafield tag="102" ind1=" " ind2=" ">
+<subfield code="a">FR</subfield>
+</datafield>
+<datafield tag="105" ind1=" " ind2=" ">
+<subfield code="a">||||z   00|a|</subfield>
+</datafield>
+<datafield tag="106" ind1=" " ind2=" ">
+<subfield code="a">r</subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">i </subfield>
+<subfield code="b">xxxe  </subfield>
+</datafield>
+<datafield tag="181" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">txt</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2="0">
+<subfield code="6">01</subfield>
+<subfield code="a">n</subfield>
+</datafield>
+<datafield tag="182" ind1=" " ind2=" ">
+<subfield code="6">02</subfield>
+<subfield code="c">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield tag="200" ind1="1" ind2=" ">
+<subfield code="a">Soleil froid</subfield>
+<subfield code="b">Texte imprimé</subfield>
+<subfield code="f">Michel Lemoine</subfield>
+</datafield>
+<datafield tag="210" ind1=" " ind2=" ">
+<subfield code="a">Paris</subfield>
+<subfield code="c">Éd. Saint-Germain-des-Prés</subfield>
+<subfield code="d">1976</subfield>
+<subfield code="e">30-Nîmes</subfield>
+<subfield code="g">Impr. du Castellum</subfield>
+</datafield>
+<datafield tag="215" ind1=" " ind2=" ">
+<subfield code="a">29 p.</subfield>
+<subfield code="d">21 cm</subfield>
+</datafield>
+<datafield tag="225" ind1="|" ind2=" ">
+<subfield code="a">Collection À l'écoute des sources</subfield>
+<subfield code="x">0395-3025</subfield>
+</datafield>
+<datafield tag="410" ind1=" " ind2="0">
+<subfield code="0">34231653</subfield>
+<subfield code="t">Collection À l'écoute des sources</subfield>
+<subfield code="x">0395-3025</subfield>
+<subfield code="v">86</subfield>
+</datafield>
+<datafield tag="686" ind1=" " ind2=" ">
+<subfield code="a">821</subfield>
+<subfield code="2">Cadre de classement de la Bibliographie nationale française</subfield>
+</datafield>
+<datafield tag="700" ind1=" " ind2="|">
+<subfield code="3">12090036</subfield>
+<subfield code="o">ISNI0000000121442535</subfield>
+<subfield code="a">Lemoine</subfield>
+<subfield code="b">Michel</subfield>
+<subfield code="f">1937-....</subfield>
+<subfield code="c">médiéviste</subfield>
+<subfield code="4">070</subfield>
+</datafield>
+<datafield tag="801" ind1=" " ind2="0">
+<subfield code="a">FR</subfield>
+<subfield code="b">FR-751131015</subfield>
+<subfield code="c">19780419</subfield>
+<subfield code="g">AFNOR</subfield>
+<subfield code="h">FRBNF34595063000000X</subfield>
+<subfield code="2">intermrc</subfield>
+</datafield>
+<datafield tag="930" ind1=" " ind2=" ">
+<subfield code="5">FR-751131010:34595063001001</subfield>
+<subfield code="a">16-YE-6836 (86)</subfield>
+<subfield code="b">759999999</subfield>
+<subfield code="c">Tolbiac - Rez de Jardin - Littérature et art - Magasin</subfield>
+<subfield code="d">O</subfield>
+</datafield>
+</record>      </records>
