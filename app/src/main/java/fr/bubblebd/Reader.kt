@@ -378,35 +378,12 @@ class ComicView(context:Context):View(context) {
         canvas.drawBitmap(b,null,destination,paint)
         illuminated?.takeIf {panel>=0}?.let {indices ->
             fun path(group:List<Int>)=android.graphics.Path().apply {
-                fun shape(p:Panel)=android.graphics.Path().apply {
-                    if(p.focusOutline.isEmpty())addRect(x+p.left*b.width*scale,y+p.top*b.height*scale,x+p.right*b.width*scale,y+p.bottom*b.height*scale,android.graphics.Path.Direction.CW)
-                    else {p.focusOutline.forEachIndexed {index,v ->if(index==0)moveTo(x+v.x*b.width*scale,y+v.y*b.height*scale) else lineTo(x+v.x*b.width*scale,y+v.y*b.height*scale)};close()}
+                // One solid rectangle for the displayed cases and their attached balloons.
+                // Keep detection contours and exclusions intact; they no longer cut the light.
+                GuidedFrames.illuminatedBounds(panels,group)?.let {p ->
+                    addRect(x+p.left*b.width*scale,y+p.top*b.height*scale,
+                        x+p.right*b.width*scale,y+p.bottom*b.height*scale,android.graphics.Path.Direction.CW)
                 }
-                fun core(p:Panel)=p.readingOrderBounds ?: p
-                group.forEach {i ->if(i in panels.indices) {
-                    val p=panels[i];val lit=shape(p)
-                    // Artwork follows its contour before other physical cases are removed.
-                    p.focusIncludes.filter {it.focusOutline.isNotEmpty()}.forEach {lit.op(shape(it),android.graphics.Path.Op.UNION)}
-                    val c=core(p)
-                    // An overlapping inset belongs to its own physical case, even
-                    // when the detector has not attached an explicit exclusion.
-                    val children=panels.indices.filter {j ->j !in group && j!=i}.mapNotNull {j ->
-                        val other=panels[j];val q=core(other)
-                        val shared=maxOf(0f,minOf(c.right,q.right)-maxOf(c.left,q.left))*maxOf(0f,minOf(c.bottom,q.bottom)-maxOf(c.top,q.top))
-                        if(q.width*q.height<c.width*c.height*.80f && shared>q.width*q.height*.80f)
-                            q.copy(focusOutline=other.focusOutline) else null
-                    }
-                    (p.focusExclusions+children).forEach {hole ->
-                        if(group.none {j->j!=i && j in panels.indices && core(panels[j]).contains((hole.left+hole.right)*.5f,(hole.top+hole.bottom)*.5f)})
-                            lit.op(shape(hole),android.graphics.Path.Op.DIFFERENCE)
-                    }
-                    op(lit,android.graphics.Path.Op.UNION)
-                }}
-                // Restore speech and confirmed foreground crossing an earlier frame.
-                // Shared balloons stay bright without lighting the other case.
-                group.forEach {i ->if(i in panels.indices)panels[i].focusIncludes.filter {it.focusOutline.isEmpty() || it.foregroundOverhang}.forEach {part ->
-                    op(shape(part),android.graphics.Path.Op.UNION)
-                }}
             }
             val illuminated=path(indices)
             val alpha=outsideDim*255/100

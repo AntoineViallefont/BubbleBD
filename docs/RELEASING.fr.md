@@ -42,7 +42,7 @@ Les builds publics d'origine utilisent les identifiants publics décrits dans `p
 
 Les contrôles Android automatisés passent exclusivement par `scripts/test-device.sh` sur l'AVD `BubbleBD_Test_API_36_1` au port 5580. Les originaux du corpus privé ne sont pas redistribuables et sont absents du dépôt. Le mainteneur conserve les preuves et exécute le corpus complet lorsqu'il modifie le moteur. Ne jamais annoncer que tous les tests passent lorsque des échecs connus restent ouverts.
 
-La bêta 0.3.33 conserve le moteur existant. La dernière mesure privée complète portait sur 61 planches et 340 variantes ; 15 planches comportaient encore au moins un critère en échec. Ces chiffres ne sont pas un taux de réussite sur toutes les BD.
+La bêta 0.3.34 conserve le moteur existant. La dernière mesure privée complète portait sur 61 planches et 340 variantes ; 15 planches comportaient encore au moins un critère en échec. Ces chiffres ne sont pas un taux de réussite sur toutes les BD.
 
 Les anciennes versions Firebase étaient signées Android Debug. Elles ne peuvent pas être remplacées directement par la bêta publique. Désinstaller ferait perdre les données locales : ne pas demander une désinstallation sans expliquer cette conséquence. Les fichiers originaux ne sont pas supprimés.
 
@@ -58,5 +58,7 @@ BUBBLEBD_TEST_LANGUAGE=fr ./scripts/test-device.sh -Pandroid.testInstrumentation
 Le mainteneur peut contrôler une mise à jour avec deux APK portant sa même signature. Ce test nécessite sa clé privée pour signer le compagnon de test, réinitialise uniquement l’émulateur dédié et utilise une fiche fictive :
 
 ```sh
-./scripts/test-device.sh --update-release distribution/BubbleBD-0.3.32-beta.apk distribution/BubbleBD-0.3.33-beta.apk
+./scripts/test-device.sh --update-release distribution/BubbleBD-0.3.33-beta.apk distribution/BubbleBD-0.3.34-beta.apk
 ```
+
+Le rectangle plein entraîne des écarts intentionnels aux anciennes assertions du masque : 16 planches avec critères en échec au lieu de 15. Géométrie identique sur les 340 variantes.

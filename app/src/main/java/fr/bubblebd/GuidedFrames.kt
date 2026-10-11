@@ -13,6 +13,13 @@ object GuidedFrames {
         left=minOf(bounds.left,part.left),top=minOf(bounds.top,part.top),
         right=maxOf(bounds.right,part.right),bottom=maxOf(bounds.bottom,part.bottom))}
 
+    /** Presentation only: a single enclosing rectangle, with no holes or contour cuts. */
+    internal fun illuminatedBounds(panels:List<Panel>,visible:List<Int>):Panel? {
+        val bounds=visible.distinct().filter {it in panels.indices}.map {focusBounds(panels[it])}
+        if(bounds.isEmpty())return null
+        return Panel(bounds.minOf {it.left},bounds.minOf {it.top},bounds.maxOf {it.right},bounds.maxOf {it.bottom})
+    }
+
     data class Frame(val indices:IntRange,val bounds:Panel,val scale:Float,val visible:List<Int> = indices.toList())
     fun frame(panels:List<Panel>,anchor:Int,pageWidth:Int,pageHeight:Int,viewWidth:Int,viewHeight:Int,
               minimum:Int=0,maximum:Int=panels.lastIndex,forward:Boolean=true):Frame {

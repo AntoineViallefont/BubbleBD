@@ -56,7 +56,7 @@ BUBBLEBD_TEST_LANGUAGE=fr ./scripts/test-device.sh -Pandroid.testInstrumentation
 
 The script resets test-library data. Do not use it on a phone or a shared emulator. Other existing UI tests use French labels; the test script defaults to French.
 
-Beta 0.3.33 retains the existing detection algorithm. The latest complete private baseline covered 61 pages and 340 variants; 15 pages still failed at least one criterion. These figures are not a success-rate estimate for all comics.
+Beta 0.3.34 retains the existing detection algorithm. The latest complete private baseline covered 61 pages and 340 variants; 15 pages still failed at least one criterion. These figures are not a success-rate estimate for all comics.
 
 Older Firebase builds used Android Debug signing and cannot be replaced directly by the public beta. Uninstalling would erase local app data; always explain this consequence. Original comic files are preserved.
 
@@ -65,5 +65,7 @@ Older Firebase builds used Android Debug signing and cannot be replaced directly
 With the maintainer's signing key available, the following resets only the dedicated test emulator, signs a temporary test companion and checks a synthetic library and preferences before and after an in-place update. Both APKs must use that key. It does not require root or touch a phone.
 
 ```sh
-./scripts/test-device.sh --update-release distribution/BubbleBD-0.3.32-beta.apk distribution/BubbleBD-0.3.33-beta.apk
+./scripts/test-device.sh --update-release distribution/BubbleBD-0.3.33-beta.apk distribution/BubbleBD-0.3.34-beta.apk
 ```
+
+The new solid rectangle adds intentional historical-mask failures (16 pages with failing criteria instead of 15); it does not change geometry across the 340 variants.

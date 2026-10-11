@@ -1,0 +1,43 @@
+{
+  "version": "0.3.34",
+  "version_code": 39,
+  "published": false,
+  "jvm_passed": 192,
+  "jvm_skipped": 1,
+  "lint": "passed",
+  "new_android_passed": 2,
+  "historical_android": {
+    "cases": 108,
+    "passed": 91,
+    "failed": 13,
+    "skipped_network": 4,
+    "old_mask_failures": 11,
+    "known_corpus_failure": 1,
+    "window_focus_failure": 1,
+    "isolated_interface_retry": "passed"
+  },
+  "corpus": {
+    "pages": 61,
+    "variants": 340,
+    "geometry_navigation_changes": 0,
+    "baseline_failed_pages": 15,
+    "current_failed_pages_historical_mask": 16
+  },
+  "release_build_and_lint": "passed",
+  "production_files_identical_to_canonical": 98,
+  "certificate_sha256": "c8fe1a0129e6dc2f98a9685e512ce8a43b7816718aae93970476ef37092d96f9",
+  "signed_update": {
+    "from": "0.3.33 (38)",
+    "to": "0.3.34 (39)",
+    "result": "passed",
+    "scope": "Synthetic library on dedicated emulator; no phone tested",
+    "preserved": [
+      "library metadata",
+      "page 7/12",
+      "metadata lock",
+      "theme",
+      "sort",
+      "dimming"
+    ]
+  }
+}

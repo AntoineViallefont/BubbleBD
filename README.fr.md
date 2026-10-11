@@ -6,7 +6,7 @@
 
 BubbleBD est un lecteur Android gratuit et open source pour votre collection personnelle. Ouvrez un album, passez d'une case à l'autre et retrouvez votre lecture là où vous l'avez laissée.
 
-**[Télécharger la bêta Android](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.33-beta.1)** · **[Devenir testeur](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester-fr.yml)** · [Signaler un problème](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug-fr.yml) · [Proposer une idée](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature-fr.yml)
+**[Télécharger la bêta Android](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1)** · **[Devenir testeur](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester-fr.yml)** · [Signaler un problème](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug-fr.yml) · [Proposer une idée](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature-fr.yml)
 
 <p align="center">
 <img src="docs/images/accueil-nuit.png" width="230" alt="Accueil de BubbleBD avec reprise de lecture">
@@ -41,8 +41,8 @@ Vous pouvez simplement essayer la bêta, sans vous engager pour Google Play. Les
 
 ## Installer la bêta
 
-1. Ouvrez [la dernière version](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.33-beta.1) depuis votre téléphone Android.
-2. Dans **Assets**, téléchargez `BubbleBD-0.3.33-beta.apk` (pas l'archive du code source).
+1. Ouvrez [la dernière version](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1) depuis votre téléphone Android.
+2. Dans **Assets**, téléchargez `BubbleBD-0.3.34-beta.apk` (pas l'archive du code source).
 3. Ouvrez le fichier et autorisez ponctuellement votre navigateur ou gestionnaire de fichiers à installer cette application. Vous pouvez retirer cette autorisation ensuite. Ne désactivez pas Play Protect.
 4. Ajoutez un dossier contenant des albums que vous avez le droit de lire. Aucun album commercial n'est fourni.
 
@@ -73,3 +73,9 @@ Les dépendances et poids tiers conservent leurs licences. Les fichiers de BD de
 ### Google Drive et autres fournisseurs
 
 Le sélecteur de dossiers Android peut proposer d’autres fournisseurs, selon les applications installées et les dossiers qu’elles rendent accessibles. L’accès aux dossiers Google Drive n’a pas encore été vérifié avec un compte connecté ; BubbleBD ne possède pas de connexion Drive dédiée. OneDrive dispose de sa propre connexion facultative.
+
+La mise en avant utilise désormais un rectangle plein englobant les cases affichées et leurs bulles associées. Les espaces et encarts à l’intérieur restent lumineux. Détection et ordre de lecture inchangés.
+
+Vérification : 192 contrôles JVM, lint release et deux nouveaux contrôles Android réussis. Sur 61 planches / 340 variantes, géométrie et vues de lecture identiques. Les assertions historiques du masque restent en échec avec cette nouvelle règle, ainsi que les limites de détection déjà connues ; aucun succès global annoncé.
+
+Le nouveau rectangle ajoute des écarts intentionnels aux anciens tests du masque (16 planches avec critères en échec au lieu de 15).
