@@ -81,3 +81,5 @@ La mise en avant utilise désormais un rectangle plein englobant les cases affic
 La langue suit le téléphone par défaut (français ou anglais ; anglais pour les autres langues). Choix dans Réglages → Langue → Langue du téléphone / Français / English, également sur Android 8–12. Titres et résumés conservent leur langue d’origine.
 
 [0.3.36 verification](docs/beta-0.3.36-verification.json).
+
+Soumission Uptodown du 14 octobre 2026 : **Pending revision**, pas encore publiée. La bêta GitHub 0.3.36 ci-dessus est disponible. Français/anglais selon le téléphone, choix dans Réglages.

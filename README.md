@@ -77,3 +77,5 @@ The reading highlight now uses one solid rectangle enclosing the displayed panel
 Interface language follows the phone by default (French or English; English for other languages). Change it at Settings → Language → Phone language / Français / English, including Android 8–12. Book titles and summaries keep their original language.
 
 [0.3.36 verification](docs/beta-0.3.36-verification.json).
+
+Uptodown submission on 14 October 2026: **Pending revision**, not published yet. The 0.3.36 GitHub beta above is available now. The release supports English/French and follows the phone language by default; choose a language in Settings.
