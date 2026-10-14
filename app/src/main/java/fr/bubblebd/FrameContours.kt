@@ -22,6 +22,19 @@ internal class FrameContours(val pixels:IntArray,val w:Int,val h:Int,val speech:
         }
         return if(seen<max(4,(b-a)/20))0f else hits.toFloat()/seen
     }
+    /** A crop's inner edge must itself be a light/dark stroke. The contrast
+     * of a different nearby line is not evidence that this crop is framed. */
+    internal fun dividerSupport(v:Int,a:Int,b:Int,vertical:Boolean):Float {
+        var seen=0;var hits=0
+        for(u in a until b) {
+            val x=if(vertical)v else u;val y=if(vertical)u else v
+            if(x !in 3 until w-3 || y !in 3 until h-3 || covered(x,y))continue
+            seen++
+            val c=level(x,y)
+            if((c<130 || c>235) && listOf(-3,3).any {d ->abs(c-level(x+if(vertical)d else 0,y+if(vertical)0 else d))>25})hits++
+        }
+        return if(seen<max(4,(b-a)/20))0f else hits.toFloat()/seen
+    }
     fun fit(p:Panel):Panel? {
         if(fitted.containsKey(p))return fitted[p]
         return fitUncached(p).also {fitted[p]=it}

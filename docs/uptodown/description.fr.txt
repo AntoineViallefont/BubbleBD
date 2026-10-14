@@ -1,0 +1,11 @@
+BubbleBD est un lecteur gratuit de bandes dessinées et de mangas pour Android. Ajoutez vos propres fichiers PDF, CBZ/ZIP ou CBR/RAR depuis les dossiers que vous autorisez, organisez votre bibliothèque par séries et reprenez votre lecture à la dernière page consultée.
+
+Lisez en page entière ou utilisez la lecture guidée par cases, avec détection locale sur le téléphone, zoom par double toucher, pincement et sens de lecture manga. Réglez l’assombrissement autour de la zone affichée et choisissez le thème clair ou sombre.
+
+L’interface est disponible en français et en anglais. Elle suit la langue du téléphone par défaut ; vous pouvez la modifier dans les réglages. Les titres et résumés des albums conservent leur langue d’origine.
+
+BubbleBD peut rechercher des informations bibliographiques auprès de catalogues publics et d’un service partagé utilisant Mistral. Cette fonction nécessite Internet et reste soumise à des quotas gratuits. Les sources sont affichées dans les fiches ; vous pouvez modifier ou figer les informations. L’accès OneDrive est facultatif et passe par votre compte Microsoft.
+
+Votre bibliothèque et votre progression restent locales, sans compte BubbleBD ni synchronisation entre appareils. Les fichiers originaux ne sont ni modifiés ni supprimés. Aucun achat, abonnement ou publicité. Aucun catalogue de BD commerciales n’est fourni : utilisez uniquement des fichiers auxquels vous avez légalement accès.
+
+Version bêta : la détection des cases et des bulles reste imparfaite sur certaines planches ; la lecture en page entière reste disponible. Android 8.0 ou ultérieur, appareils 64 bits ARM64 ou x86_64. Code source disponible sous AGPL-3.0-or-later.

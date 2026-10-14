@@ -245,9 +245,10 @@ object HybridPanels {
             }
         }
         trace?.invoke("contour repair",base.toList())
-        val canvases=CanvasPanels.repair(base.toList(),proposals,pixels,w,h,contours,predictions.filter {it.text && it.confidence>.45f}.map {it.bounds},geometry)
+        val canvases=LayeredScenes.repair(base.toList(),proposals,pixels,w,h,FrameContours(pixels,w,h,rawSpeech))
+            ?: CanvasPanels.repair(base.toList(),proposals,pixels,w,h,contours,predictions.filter {it.text && it.confidence>.45f}.map {it.bounds},geometry)
         trace?.invoke("canvas repair",canvases)
-        val paper=PaperRowPanels.repair(canvases,proposals,pixels,w,h,rawSpeech)
+        val paper=PageBleed.expand(LayoutEvidence.removeEmbeddedCrops(PaperRowPanels.repair(canvases,proposals,pixels,w,h,rawSpeech),FrameContours(pixels,w,h,rawSpeech),w,h),pixels,w,h)
         trace?.invoke("paper repair",paper)
         base.clear();base.addAll(FrameContinuations.repair(paper,pixels,w,h,rawSpeech))
         if(base.any {it.width>.90f && it.focusExclusions.isNotEmpty()})for(p in base.toList()) {
@@ -319,7 +320,7 @@ object HybridPanels {
         trace?.invoke("global rectangular=${rectangular.isNotEmpty()}",base.toList())
         // Freeze physical inserts before any speech expands the reading envelopes.
         val outlined=OrthogonalNotches.attach(base.toList(),pixels,w,h,rawSpeech)
-        val notched=InsetPanels.recover(outlined,pixels,w,h,predictions.filter {it.text && it.confidence>.70f}.map {it.bounds})
+        val notched=LayoutEvidence.uniqueFrames(InsetPanels.recover(outlined,pixels,w,h,predictions.filter {it.text && it.confidence>.70f}.map {it.bounds}))
         val confirmedInserts=notched.map(::core).filter {q ->outlined.none {core(it)==q}}
         base.clear();base.addAll(notched)
         trace?.invoke("physical inserts",base.toList())

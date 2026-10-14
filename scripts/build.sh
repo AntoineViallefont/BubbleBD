@@ -13,12 +13,15 @@ if [ "${1:-}" = --release ]; then
 elif [ "${1:-}" = --compile-only ]; then
   [ "$#" -eq 1 ] || exit 1
   ./gradlew :app:assembleDebug --console=plain
+elif [ "${1:-}" = --tests ]; then
+  # Focused JVM iteration; the final build still runs the entire JVM suite.
+  ./gradlew :app:assembleDebug :app:testDebugUnitTest "$@" :app:lintDebug --console=plain
 else
   [ "$#" -eq 0 ] || exit 1
   ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --console=plain
 fi
 mkdir -p distribution
-cp app/build/outputs/apk/debug/app-debug.apk distribution/BubbleBD-0.3.34.apk
-printf '\nAPK : %s/distribution/BubbleBD-0.3.34.apk\n' "$PWD"
+cp app/build/outputs/apk/debug/app-debug.apk distribution/BubbleBD-0.3.36.apk
+printf '\nAPK : %s/distribution/BubbleBD-0.3.36.apk\n' "$PWD"
 
 python3 scripts/package-source.py

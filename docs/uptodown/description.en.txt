@@ -1,0 +1,11 @@
+BubbleBD is a free comic and manga reader for Android. Add your own PDF, CBZ/ZIP or CBR/RAR files from folders you authorise, organise your library by series and resume reading where you left off.
+
+Read full pages or use guided panel reading with on-device detection, double-tap zoom, pinch gestures and right-to-left manga reading. Adjust dimming around the displayed area and choose a light or dark theme.
+
+The interface supports English and French. It follows your phone language by default, and you can change it in Settings. Book titles and summaries keep their original language.
+
+BubbleBD can look up book information in public catalogues and through a shared service using Mistral. This feature requires an internet connection and is subject to free shared quotas. Sources appear in book records, and you can edit or lock their information. Optional OneDrive access uses your Microsoft account.
+
+Your library and reading progress stay on your device, with no BubbleBD account and no cross-device synchronisation. Original files are never modified or deleted. No purchases, subscriptions or advertising. No commercial comic catalogue is supplied: use only files you can legally access.
+
+Beta version: panel and speech-balloon detection remains imperfect on some pages; full-page reading remains available. Requires Android 8.0 or later and a 64-bit ARM64 or x86_64 device. Source code is available under AGPL-3.0-or-later.

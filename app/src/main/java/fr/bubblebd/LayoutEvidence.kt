@@ -25,6 +25,50 @@ object LayoutEvidence {
             }
         }
     }
+    /** A crop sharing three outer edges needs its own inner divider. A line
+     * elsewhere in the artwork cannot close the crop's missing frame. */
+    internal fun removeEmbeddedCrops(input:List<Panel>,contours:FrameContours,w:Int,h:Int):List<Panel> {
+        fun core(p:Panel)=p.readingOrderBounds ?: p
+        val tolerance=max(3f,w*.008f)
+        return input.filterNot {panel ->
+            val p=core(panel)
+            input.any {parent ->
+                val raw=core(parent)
+                if(parent===panel || area(p)/area(raw) !in .25f.. .85f || shared(p,raw)/area(p)<.90f)return@any false
+                val q=contours.fit(core(parent)) ?: contours.fitColour(core(parent)) ?: return@any false
+                if(parent===panel || area(p)/area(q) !in .30f.. .80f || shared(p,q)/area(p)<.97f)return@any false
+                val differences=listOf(abs(p.left-q.left)*w,abs(p.top-q.top)*h,abs(p.right-q.right)*w,abs(p.bottom-q.bottom)*h)
+                if(differences.count {it<=tolerance}!=3)return@any false
+                val edge=differences.indices.single {differences[it]>tolerance}
+                val vertical=edge==0 || edge==2
+                val position=((when(edge){0->p.left;1->p.top;2->p.right;else->p.bottom})*(if(vertical)w else h)).toInt()
+                val start=((if(vertical)p.top else p.left)*(if(vertical)h else w)).toInt()+3
+                val end=((if(vertical)p.bottom else p.right)*(if(vertical)h else w)).toInt()-3
+                (-2..2).maxOf {offset ->contours.dividerSupport(position+offset,start,end,vertical)}<.90f
+            }
+        }
+    }
+    /** Independent passes may recover the same rectangle with small edge drift.
+     * Keep polygonal and layered scenes separate, even when their boxes overlap. */
+    internal fun uniqueFrames(input:List<Panel>):List<Panel> {
+        fun core(p:Panel)=p.readingOrderBounds ?: p
+        val output=mutableListOf<Panel>()
+        for(p in input) {
+            val a=core(p)
+            val index=output.indexOfFirst {other ->
+                val b=core(other);val intersection=shared(a,b)
+                p.focusOutline.isEmpty() && other.focusOutline.isEmpty() && p.focusExclusions.isEmpty() && other.focusExclusions.isEmpty() &&
+                    intersection/(area(a)+area(b)-intersection)>.85f &&
+                    maxOf(abs(a.left-b.left),abs(a.top-b.top),abs(a.right-b.right),abs(a.bottom-b.bottom))<.025f
+            }
+            if(index<0)output.add(p) else {
+                val old=output[index];val c=union(core(old),a)
+                output[index]=old.copy(left=min(old.left,p.left),top=min(old.top,p.top),right=max(old.right,p.right),bottom=max(old.bottom,p.bottom),readingOrderBounds=c,
+                    focusIncludes=(old.focusIncludes+p.focusIncludes).distinct(),jointFocus=(old.jointFocus+p.jointFocus).distinct())
+            }
+        }
+        return output
+    }
     fun separatedStack(frames:List<Panel>,pixels:IntArray,w:Int,h:Int):Boolean {
         if(frames.size !in 2..3)return false
         val sorted=frames.sortedBy {it.top}

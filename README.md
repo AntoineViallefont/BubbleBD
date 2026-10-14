@@ -6,7 +6,7 @@
 
 BubbleBD is a free, open-source Android reader for your own comic collection. Open a book, move through its panels and pick up where you left off.
 
-**[Download the Android beta](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1)** · **[Volunteer to test](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** · [Report a problem](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml) · [Suggest an improvement](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml)
+**[Download the Android beta](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.36-beta.1)** · **[Volunteer to test](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester.yml)** · [Report a problem](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug.yml) · [Suggest an improvement](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature.yml)
 
 <p align="center">
 <img src="docs/images/en-home-dark.png" width="230" alt="BubbleBD home screen with reading progress">
@@ -42,8 +42,8 @@ Follow releases with **Watch → Custom → Releases**. Report problems and idea
 
 ## Install
 
-1. Open the [beta release](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1) on your Android phone.
-2. Under **Assets**, download `BubbleBD-0.3.34-beta.apk`, not the source archive.
+1. Open the [beta release](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.36-beta.1) on your Android phone.
+2. Under **Assets**, download `BubbleBD-0.3.36-beta.apk`, not the source archive.
 3. Open the APK and temporarily allow installation from your browser or file manager. You can revoke that permission afterwards. Do not disable Play Protect.
 4. Add a folder containing comics you have the right to read.
 
@@ -53,7 +53,7 @@ Follow releases with **Watch → Custom → Releases**. Report problems and idea
 
 ## Honest limits and privacy
 
-Panel detection can miss panels, place them in the wrong order or crop a balloon imperfectly. Full-page reading and zoom remain available. The latest complete private engine baseline had failing criteria on 15 of 61 pages across 340 variants; this is not a success-rate estimate for all comics. This release changes the highlight mask, not the detection algorithm.
+Latest complete engine measurement (0.3.35): 64 pages / 358 variants, three new seven-panel pages passed and no new regression; 16 pages retain failing reader criteria and 12 historical Android checks fail. These figures do not estimate universal accuracy. Version 0.3.36 adds the in-app language selector; engine and weights are identical to 0.3.35.
 
 Book-information lookup uses public catalogues and a shared Mistral service. It needs Internet, may return incomplete information and has shared quotas. Bibliographic clues and sometimes a cover thumbnail may be sent to these services. Full books and reading progress are not sent to the metadata service. Read the [privacy information](PRIVACY.md).
 
@@ -72,6 +72,8 @@ Third-party components and model weights retain their licences. The code licence
 
 The reading highlight now uses one solid rectangle enclosing the displayed panel(s) and their associated balloons. Areas and insets inside that rectangle remain bright. Panel detection and reading order are unchanged.
 
-Verification: 192 JVM checks and release lint passed; two new Android rendering checks passed. Across 61 pages / 340 variants, geometry and reading views are unchanged. Historical mask assertions retain their failures under this new rule, alongside existing detection limits; this is not an all-tests-passed release.
 
-The new solid rectangle adds intentional historical-mask failures (16 pages with failing criteria instead of 15); it does not change geometry across the 340 variants.
+
+Interface language follows the phone by default (French or English; English for other languages). Change it at Settings → Language → Phone language / Français / English, including Android 8–12. Book titles and summaries keep their original language.
+
+[0.3.36 verification](docs/beta-0.3.36-verification.json).

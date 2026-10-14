@@ -1,0 +1,23 @@
+{
+  "name": "BubbleBD",
+  "version": "0.3.36",
+  "versionCode": 41,
+  "package": "fr.bubblebd",
+  "author": "AntoineViallefont",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "territories": "Worldwide",
+  "stage": "Beta",
+  "distribution": "Free",
+  "ads": false,
+  "iap": false,
+  "subscription": false,
+  "license": "AGPL-3.0-or-later",
+  "website": "https://github.com/AntoineViallefont/BubbleBD",
+  "shortDescriptions": {
+    "fr": "Vos BD et mangas, en page entière ou en lecture guidée par cases.",
+    "en": "Read your comics and manga as full pages or with guided panels."
+  }
+}

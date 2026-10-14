@@ -3,6 +3,8 @@ package fr.bubblebd
 /** French source labels are stable internal keys. Add translations here, not in stored data. */
 internal object UiCatalog {
     val entries: Map<String, String> = linkedMapOf(
+        "Langue" to "Language",
+        "Langue du téléphone" to "Phone language",
         "Droite vers gauche" to "Right to left",
         "Gauche vers droite" to "Left to right",
         "Page hors limites" to "Page out of range",

@@ -2,7 +2,7 @@
 
 **English · [Français](PRIVACY.fr.md)**
 
-Updated 6 October 2026 — BubbleBD 0.3.33.
+Updated 14 October 2026 — BubbleBD 0.3.36.
 
 BubbleBD is a volunteer project maintained by Antoine Viallefont. It requires no BubbleBD account and contains no advertising or analytics SDK. General questions can go to the [project issues](https://github.com/AntoineViallefont/BubbleBD/issues), which are public: do not include personal information. Report vulnerabilities privately through the Security tab.
 

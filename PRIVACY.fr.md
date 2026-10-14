@@ -2,7 +2,7 @@
 
 **[English](PRIVACY.md) · Français**
 
-Dernière mise à jour : 6 octobre 2026 — BubbleBD 0.3.33.
+Dernière mise à jour : 14 octobre 2026 — BubbleBD 0.3.36.
 
 BubbleBD est un projet bénévole maintenu par Antoine Viallefont. L'application ne demande pas de compte BubbleBD. Elle n'intègre ni publicité ni outil de mesure d'audience. Pour une question générale, utilisez les [tickets du projet](https://github.com/AntoineViallefont/BubbleBD/issues). Ces tickets sont publics : ne publiez pas d'informations personnelles. Pour une vulnérabilité, utilisez le signalement privé dans l'onglet Security.
 

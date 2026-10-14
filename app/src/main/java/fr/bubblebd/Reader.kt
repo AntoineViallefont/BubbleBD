@@ -136,7 +136,8 @@ import kotlin.math.min
     }
     LaunchedEffect(document,page,loading,analysisReady,activePanel,readingDirection) {
         if(document==null || loading || !analysisReady)return@LaunchedEffect
-        val target=ReaderPrefetch.nextPage(page,total,activePanel?.first,activePanel?.second ?: 0,readingDirection)
+        val progress=activePanel?.let {comicView?.readingStepProgress} ?: activePanel
+        val target=ReaderPrefetch.nextPage(page,total,progress?.first,progress?.second ?: 0,readingDirection)
         if(target==null)prefetch.cancel() else prefetch.prepare(target)
     }
     fun changePage(target:Int,guided:Boolean=false):Boolean {
@@ -209,6 +210,12 @@ class ComicView(context:Context):View(context) {
     var onPanelChanged:(Int,Int)->Unit={_,_->}
     var onPanelGroupChanged:(IntRange?,Int)->Unit={_,_->}
     private var shown:IntRange?=null
+    private var readingSteps:List<GuidedFrames.Frame> = emptyList()
+    internal val readingStepProgress:Pair<List<Int>,Int>? get() {
+        if(panel<0 || readingSteps.isEmpty())return null
+        val index=readingSteps.indexOfLast {it.indices.first<=panel}.coerceAtLeast(0)
+        return listOf(index) to readingSteps.size
+    }
     var onPanelSelectionChanged:(List<Int>?,Int)->Unit={_,_->}
     private var illuminated:List<Int>?=null
     private var previousShown:List<Int>?=null
@@ -304,22 +311,32 @@ class ComicView(context:Context):View(context) {
             navigated=true
             if(panel>=0) {
                 val visible=shown ?: panel..panel
-                val next=if(delta>0)visible.last+1 else visible.first-1
-                if(next in panels.indices) showPanel(next,if(delta>0)next else 0,if(delta<0)next else panels.lastIndex,delta>0) else onGuidedPage(delta)
+                val next=if(delta>0)readingSteps.firstOrNull {it.indices.first>visible.last}
+                    else readingSteps.lastOrNull {it.indices.last<visible.first}
+                if(next!=null) showFrame(next.indices.first,next) else onGuidedPage(delta)
             } else if(autoCases)onGuidedPage(delta) else onPage(delta)
         } else if(panel<0 && abs(dy)>threshold) {navigated=true;val delta=if(dy<0) 1 else -1;if(autoCases)onGuidedPage(delta) else onPage(delta)}
     }
     fun setPage(b:Bitmap?,p:List<Panel>,entry:Int?=null) {
         val guidedEntry=entry!=null
-        if(bitmap!==b) {bitmap=b;panels=p;resetPage(!guidedEntry || p.none {!it.isWholePage});autoCases=guidedEntry;if(guidedEntry && p.any {!it.isWholePage}) showPanel(if(entry!!<0)p.lastIndex else 0,animate=false)}
+        if(bitmap!==b) {bitmap=b;panels=p;updateReadingSteps();resetPage(!guidedEntry || p.none {!it.isWholePage});autoCases=guidedEntry;if(guidedEntry && p.any {!it.isWholePage}) showEntry(entry!!<0)}
         else if(panels!=p) {
             panels=p
+            updateReadingSteps()
             // Late detection must preserve a pinch/double-tap zoom already chosen by the reader.
-            if(!freeZoom) {panel=-1;resetPage(!guidedEntry || p.none {!it.isWholePage});autoCases=guidedEntry;if(guidedEntry && p.any {!it.isWholePage})showPanel(if(entry!!<0)p.lastIndex else 0,animate=false)}
+            if(!freeZoom) {panel=-1;resetPage(!guidedEntry || p.none {!it.isWholePage});autoCases=guidedEntry;if(guidedEntry && p.any {!it.isWholePage})showEntry(entry!!<0)}
             else invalidate()
         }
     }
     fun fitPage()=resetPage(true)
+    private fun updateReadingSteps() {
+        val b=bitmap
+        readingSteps=if(b==null)emptyList() else GuidedSequence.steps(panels,b.width,b.height,width,height)
+    }
+    private fun showEntry(backward:Boolean) {
+        val frame=if(backward)readingSteps.lastOrNull() else readingSteps.firstOrNull()
+        if(frame!=null)showFrame(frame.indices.first,frame,animate=false)
+    }
     private fun resetPage(notify:Boolean) {autoCases=false;stopFocusTransition();val b=bitmap ?: return; if(width==0 || height==0) return; base=min(width.toFloat()/b.width,height.toFloat()/b.height);scale=base;x=(width-b.width*scale)/2;y=(height-b.height*scale)/2;panel=-1;freeZoom=false;caseBounds=null;shown=null;illuminated=null;if(notify) {onPanelChanged(-1,panels.size);onPanelGroupChanged(null,panels.size);onPanelSelectionChanged(null,panels.size)};invalidate()}
     private fun zoomAt(focusX:Float,focusY:Float) {
         // Le point touché reste sous le doigt, sauf contrainte des bords de page.
@@ -332,6 +349,10 @@ class ComicView(context:Context):View(context) {
         val b=bitmap ?: return
         if(width<=0 || height<=0)return
         val frame=GuidedFrames.frame(panels,i,b.width,b.height,width,height,minimum,maximum,forward)
+        showFrame(i,frame,animate)
+    }
+    private fun showFrame(i:Int,frame:GuidedFrames.Frame,animate:Boolean=true) {
+        val b=bitmap ?: return
         val previous=illuminated
         autoCases=true;panel=i;shown=frame.indices;illuminated=frame.visible;freeZoom=false;scale=frame.scale
         caseScale=frame.scale;caseBounds=frame.bounds
@@ -371,7 +392,7 @@ class ComicView(context:Context):View(context) {
         y=if(h<=height)(height-h)/2 else y.coerceIn(height-h,0f)
         if(scale<=base*1.02f) {freeZoom=false;val automatic=autoCases;fitPage();autoCases=automatic}
     }
-    override fun onSizeChanged(w:Int,h:Int,oldw:Int,oldh:Int) {val selected=panel;val automatic=autoCases;fitPage();autoCases=automatic;if(selected in panels.indices) showPanel(selected)}
+    override fun onSizeChanged(w:Int,h:Int,oldw:Int,oldh:Int) {val selected=panel;val automatic=autoCases;fitPage();updateReadingSteps();autoCases=automatic;if(selected in panels.indices) showPanel(selected)}
     override fun onDraw(canvas:Canvas) {
         super.onDraw(canvas);val b=bitmap ?: return
         destination.set(x,y,x+b.width*scale,y+b.height*scale)

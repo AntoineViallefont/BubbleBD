@@ -67,6 +67,7 @@ import java.text.DateFormat
 import java.util.Date
 
 class MainActivity:ComponentActivity() {
+    override fun attachBaseContext(base: android.content.Context) = super.attachBaseContext(AppLanguage.wrap(base))
     override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
         if(android.os.Build.VERSION.SDK_INT>=31) {
@@ -351,6 +352,9 @@ val Red=Color(0xFFEF535D)
 }
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable fun SettingsScreen(vm:LibraryViewModel,pickFolder:()->Unit,connectCloud:()->Unit,metadataStatus:MetadataSearchStatus=vm.metadataSearchStatus) {
+    val languageContext = LocalContext.current
+    val languageActivity = LocalActivity.current
+    var languageDialog by rememberSaveable { mutableStateOf(false) }
     var about by rememberSaveable {mutableStateOf(false)}
     if(about) {
         BackHandler {about=false}
@@ -361,6 +365,13 @@ val Red=Color(0xFFEF535D)
     var delete by remember { mutableStateOf<SourceFolder?>(null) }; var cache by remember {mutableLongStateOf(vm.repo.cacheSize())}
     LazyColumn(Modifier.fillMaxSize(),contentPadding=PaddingValues(horizontal=16.dp,vertical=8.dp),verticalArrangement=Arrangement.spacedBy(4.dp)) {
         item {Heading(ui("Réglages"))}
+        item {
+            val current = AppLanguage.selected(languageContext)
+            OutlinedButton(onClick={languageDialog=true}) {
+                Icon(Icons.Outlined.Language,null); Spacer(Modifier.width(8.dp))
+                Text(ui("Langue") + " : " + when(current) { "fr" -> "Français"; "en" -> "English"; else -> ui("Langue du téléphone") })
+            }
+        }
         item {
             Text(ui("Informations des BD"),fontWeight=FontWeight.Bold,fontSize=19.sp)
             OutlinedButton(onClick=vm::refreshMetadata,enabled=!vm.busy && metadataStatus.phase==MetadataSearchStatus.Phase.IDLE && vm.books.any {!it.demo}) {Text(ui("Relancer la recherche des infos"))}
@@ -394,6 +405,21 @@ val Red=Color(0xFFEF535D)
         }
     }
     delete?.let {s -> AlertDialog(onDismissRequest={delete=null},title={Text(ui("Retirer ce dossier ?"))},text={Text(ui("Il ne sera plus scanné. Les fichiers, les albums déjà indexés et leur progression sont conservés."))},confirmButton={TextButton(onClick={vm.removeSource(s);delete=null}) {Text(ui("Retirer"),color=MaterialTheme.colorScheme.error)}},dismissButton={TextButton(onClick={delete=null}) {Text(ui("Annuler"))}}) }
+    if(languageDialog) AlertDialog(onDismissRequest={languageDialog=false},title={Text(ui("Langue"))},text={Column {
+        AppLanguage.choices.forEach { language ->
+            val choose = {
+                languageDialog=false
+                if(AppLanguage.selected(languageContext)!=language) {
+                    AppLanguage.select(languageContext,language)
+                    if(android.os.Build.VERSION.SDK_INT<33) languageActivity?.recreate()
+                }
+            }
+            Row(Modifier.fillMaxWidth().clickable(onClick=choose),verticalAlignment=Alignment.CenterVertically) {
+                RadioButton(AppLanguage.selected(languageContext)==language,onClick=choose)
+                Text(when(language) {"fr" -> "Français"; "en" -> "English"; else -> ui("Langue du téléphone")})
+            }
+        }
+    }},confirmButton={TextButton(onClick={languageDialog=false}) {Text(ui("Annuler"))}})
     if(deleted) DeletedAlbumsDialog(vm) {deleted=false}
 }
 @Composable fun OneDriveSettingsRow(connected:Boolean,busy:Boolean,connect:()->Unit,disconnect:()->Unit) {

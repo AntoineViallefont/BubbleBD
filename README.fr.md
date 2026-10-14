@@ -6,7 +6,7 @@
 
 BubbleBD est un lecteur Android gratuit et open source pour votre collection personnelle. Ouvrez un album, passez d'une case à l'autre et retrouvez votre lecture là où vous l'avez laissée.
 
-**[Télécharger la bêta Android](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1)** · **[Devenir testeur](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester-fr.yml)** · [Signaler un problème](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug-fr.yml) · [Proposer une idée](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature-fr.yml)
+**[Télécharger la bêta Android](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.36-beta.1)** · **[Devenir testeur](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=tester-fr.yml)** · [Signaler un problème](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=bug-fr.yml) · [Proposer une idée](https://github.com/AntoineViallefont/BubbleBD/issues/new?template=feature-fr.yml)
 
 <p align="center">
 <img src="docs/images/accueil-nuit.png" width="230" alt="Accueil de BubbleBD avec reprise de lecture">
@@ -41,8 +41,8 @@ Vous pouvez simplement essayer la bêta, sans vous engager pour Google Play. Les
 
 ## Installer la bêta
 
-1. Ouvrez [la dernière version](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.34-beta.1) depuis votre téléphone Android.
-2. Dans **Assets**, téléchargez `BubbleBD-0.3.34-beta.apk` (pas l'archive du code source).
+1. Ouvrez [la dernière version](https://github.com/AntoineViallefont/BubbleBD/releases/tag/v0.3.36-beta.1) depuis votre téléphone Android.
+2. Dans **Assets**, téléchargez `BubbleBD-0.3.36-beta.apk` (pas l'archive du code source).
 3. Ouvrez le fichier et autorisez ponctuellement votre navigateur ou gestionnaire de fichiers à installer cette application. Vous pouvez retirer cette autorisation ensuite. Ne désactivez pas Play Protect.
 4. Ajoutez un dossier contenant des albums que vous avez le droit de lire. Aucun album commercial n'est fourni.
 
@@ -52,7 +52,7 @@ Vous pouvez simplement essayer la bêta, sans vous engager pour Google Play. Les
 
 ## Limites connues et données
 
-La détection peut manquer des cases, se tromper dans leur ordre ou cadrer imparfaitement une bulle. La lecture en page entière et le zoom restent disponibles. Aucune réussite universelle n'est promise : la dernière mesure privée du moteur comportait encore 15 planches avec des critères en échec sur 61 planches, avec 340 variantes contrôlées ; ce n'est pas une mesure de fiabilité sur toutes les BD.
+Dernière mesure complète du moteur (0.3.35) : 64 planches / 358 variantes, trois nouvelles planches à sept cases réussies et aucune nouvelle régression ; 16 planches conservent des critères lecteur en échec et 12 contrôles Android historiques échouent. Ces résultats ne mesurent pas une fiabilité universelle. La 0.3.36 ajoute le choix de langue dans l’application ; le moteur et les poids sont identiques à 0.3.35.
 
 La recherche bibliographique peut se tromper, être incomplète ou s'arrêter sur un quota. Elle utilise des catalogues publics et un service Mistral commun, dont les crédits sont partagés. Les résultats directs restent locaux ; le service Mistral peut réutiliser des fiches mises en cache. **Les corrections des lecteurs ne constituent pas encore une base collaborative.**
 
@@ -76,6 +76,8 @@ Le sélecteur de dossiers Android peut proposer d’autres fournisseurs, selon l
 
 La mise en avant utilise désormais un rectangle plein englobant les cases affichées et leurs bulles associées. Les espaces et encarts à l’intérieur restent lumineux. Détection et ordre de lecture inchangés.
 
-Vérification : 192 contrôles JVM, lint release et deux nouveaux contrôles Android réussis. Sur 61 planches / 340 variantes, géométrie et vues de lecture identiques. Les assertions historiques du masque restent en échec avec cette nouvelle règle, ainsi que les limites de détection déjà connues ; aucun succès global annoncé.
 
-Le nouveau rectangle ajoute des écarts intentionnels aux anciens tests du masque (16 planches avec critères en échec au lieu de 15).
+
+La langue suit le téléphone par défaut (français ou anglais ; anglais pour les autres langues). Choix dans Réglages → Langue → Langue du téléphone / Français / English, également sur Android 8–12. Titres et résumés conservent leur langue d’origine.
+
+[0.3.36 verification](docs/beta-0.3.36-verification.json).

@@ -1,0 +1,42 @@
+{
+  "version": "0.3.36",
+  "versionCode": 41,
+  "package": "fr.bubblebd",
+  "jvm": {
+    "passed": 203,
+    "skipped": 1,
+    "failed": 0
+  },
+  "publicJvm": {
+    "passed": 201,
+    "skipped": 2,
+    "failed": 0
+  },
+  "lint": {
+    "Warning": 96,
+    "Hint": 1
+  },
+  "androidFinalChecks": 4,
+  "androidFailed": 0,
+  "publicSignedUpdate": "0.3.34 -> 0.3.36 passed",
+  "firebaseSignedUpdate": "0.3.35 -> 0.3.36 passed",
+  "languageModes": [
+    "phone",
+    "fr",
+    "en"
+  ],
+  "legacyAndroidLocaleImplementation": "present, no runtime Android 8-12 test",
+  "runtime16KiBTested": false,
+  "phoneTested": false,
+  "engineUnchangedFromMeasured035": true,
+  "inheritedEngineBaseline": {
+    "pages": 64,
+    "variants": 358,
+    "readerPagesWithFailingCriteria": 16,
+    "androidHistoricalFailures": 12,
+    "allPassed": false
+  },
+  "screenshots": "real emulator captures; fictional books only",
+  "noPrivateCorpusDistributed": true,
+  "noNewPaidService": true
+}
